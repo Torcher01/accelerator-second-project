@@ -1,0 +1,181 @@
+.tours__background-wrapper {
+  background-image: url("../../img/tours-background-1x.webp");
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/tours-background-2x.webp");
+  }
+  background-repeat: no-repeat;
+  background-position-x: 179px;
+  background-position-y: -28px;
+  background-size: 346px 595px;
+  padding-bottom: 30px;
+}
+
+.tours__header {
+  margin: 37px 0 37px 15px;
+}
+
+.tours__tours-list {
+  margin-left: 15px;
+  margin-bottom: 33px;
+}
+
+.tours__tour-item {
+  padding-top: 224px;
+  padding-bottom: 29px;
+}
+
+.tours__tour-item--elbrus {
+  background-image: url("../../img/tours/tour-background-elbrus-1x.webp");
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/tours/tour-background-elbrus-2x.webp");
+  }
+  background-size: 290px 416px;
+  background-repeat: no-repeat;
+}
+
+.tours__tour-options {
+  display: flex;
+  margin-left: 20px;
+  margin-bottom: 16px;
+}
+
+.tours__tour-place {
+  display: flex;
+  background-color: #0266c1;
+  padding: 8px 13px 8px 0;
+  margin-right: 5px;
+}
+
+.tours__tour-place-icon {
+  width: 9px;
+  height: 12px;
+  margin-left: 16px;
+  margin-right: 9px;
+}
+
+.tours__tour-place-name {
+  display: block;
+  margin-top: -1px;
+}
+
+.tours__tour-days {
+  display: flex;
+  margin-top: 4px;
+  margin-right: 16px;
+}
+
+.tours__tour-days-icon {
+  margin-right: 12px;
+}
+
+.tours__tour-days-count {
+  display: block;
+  margin-top: 3px;
+}
+
+.tours__tour-days-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.tours__tour-nights {
+  display: flex;
+  margin-top: 6px;
+}
+
+.tours__tour-nights-count {
+  display: block;
+  margin-top: 1px;
+}
+
+.tours__tour-nights-icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 14px;
+}
+
+.tours__tour-place-name,
+.tours__tour-days-count,
+.tours__tour-nights-count {
+  font-size: 12px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.tours__tour-item-header {
+  position: relative;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  color: #fff;
+  margin: 0 0 29px 20px;
+  width: 220px;
+
+  &:before {
+    content: "";
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    width: 80px;
+    height: 1px;
+    background-color: #fff;
+    opacity: 0.2;
+  }
+}
+
+.tours__tour-info {
+  display: flex;
+  margin-left: 20px;
+}
+
+.tours__tour-info-item {
+  display: flex;
+  flex-direction: column;
+  margin-right: 8px;
+
+  &:last-child {
+    margin-left: 0;
+  }
+}
+
+.tours__tour-info-header {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 300;
+  color: #fff;
+  margin-bottom: 3px;
+}
+
+.tours__tour-info-text {
+  font-size: 13px;
+  font-weight: 700;
+  color: #fff;
+  margin-top: 2px;
+}
+
+.tours__tour-difficulty-stars {
+  display: flex;
+}
+
+.tours__tour-difficulty-star {
+  width: 17px;
+  height: 16px;
+}
+
+.tours__watch-all {
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #2d383f;
+  margin-left: 64px;
+}
+
+.tours__watch-all-icon {
+  width: 13px;
+  height: 13px;
+  margin-left: 5px;
+  margin-top: -2px;
+  vertical-align: middle;
+}

@@ -1,4 +1,16 @@
 // Vendor
 // ---------------------------------
-
 @import "vendor/normalize";
+
+// Global
+// ---------------------------------
+@import "global/fonts";
+@import "global/container";
+@import "global/body";
+@import "global/visually-hidden";
+@import "global/section-header";
+// Blocks
+// ---------------------------------
+@import "blocks/header";
+@import "blocks/hero";
+@import "blocks/tours";

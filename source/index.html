@@ -1,31 +1,119 @@
 <!DOCTYPE html>
 <html lang="ru" data-validate="html">
 
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SUPERGYM</title>
-    <link rel="stylesheet" href="sass/style.scss">
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SUPERGYM</title>
+  <link rel="stylesheet" href="sass/style.scss">
+</head>
 
-  <body class="page-body">
-    <!-- пример использования спрайта -->
-    <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
-    <svg>
-      <use href="/__spritemap#sprite-user"></use>
-    </svg>
-    <!-- примеры требуемых атрибутов data-test="*" -->
-    <div data-test="header">header</div>
-    <div data-test="hero">hero</div>
-    <div data-test="tours">tours</div>
-    <div data-test="training">training</div>
-    <div data-test="about">about</div>
-    <div data-test="reviews">reviews</div>
-    <div data-test="adv">adv</div>
-    <div data-test="gallery">gallery</div>
-    <div data-test="form">form</div>
-    <div data-test="footer">footer</div>
-    <script type="module" src="js/main.js"></script>
-  </body>
+<body>
+<header class="header" data-test="header">
+  <div class="container">
+    <h1 class="header__page-header visually-hidden">Компания "Lifetour". Организация походов в горы.</h1>
+    <div class="header__flex-wrapper">
+      <svg class="header__burger-menu-icon">
+        <use href="/__spritemap#sprite-header-burger"></use>
+      </svg>
+      <svg class="header__logo">
+        <use href="/__spritemap#sprite-header-logo"></use>
+      </svg>
+    </div>
+    <a class="header__phone" href="tel:88000000000">8 800 000-00-00</a>
+  </div>
+</header>
+<main class="main">
+  <section class="hero" data-test="hero">
+    <div class="container">
+      <div class="hero__background-wrapper">
+        <h2 class="hero__tour-header">Захватывающие вершины Кавказа</h2>
+        <p class="hero__tour-description">В сопровождении опытных гидов вы пройдёте через потрясающие ландшафты
+          и совершите восход на вершину горы Чегет.</p>
+        <button class="hero__watch-tour-button">Смотреть тур</button>
+        <nav class="hero__tour-pagination">
+          <ul class="hero__tour-pagination-list">
+            <li class="hero__tour-pagination-item hero__tour-pagination-item--active"></li>
+            <li class="hero__tour-pagination-item"></li>
+            <li class="hero__tour-pagination-item"></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </section>
+  <section class="tours" data-test="tours">
+    <div class="container">
+      <div class="tours__background-wrapper">
+        <h2 class="tours__header section-header">Ближайшие туры</h2>
+        <div class="tours__tours-list">
+          <div class="tours__tour-item tours__tour-item--elbrus">
+            <div class="tours__tour-options">
+              <div class="tours__tour-place">
+                <svg class="tours__tour-place-icon">
+                  <use href="/__spritemap#sprite-tour-place-icon"></use>
+                </svg>
+                <span class="tours__tour-place-name">Кавказ</span>
+              </div>
+              <div class="tours__tour-days">
+                <svg class="tours__tour-days-icon">
+                  <use href="/__spritemap#sprite-tour-days-icon"></use>
+                </svg>
+                <span class="tours__tour-days-count">4 дня</span>
+              </div>
+              <div class="tours__tour-nights">
+                <svg class="tours__tour-nights-icon">
+                  <use href="/__spritemap#sprite-tour-nights-icon"></use>
+                </svg>
+                <span class="tours__tour-nights-count">3 ночи</span>
+              </div>
+            </div>
+            <h3 class="tours__tour-item-header">
+              Путешествие вокруг Эльбруса
+            </h3>
+            <div class="tours__tour-info">
+              <div class="tours__tour-info-item">
+                <span class="tours__tour-info-header">Сложность:</span>
+                <div class="tours__tour-difficulty-stars">
+                  <svg class="tours__tour-difficulty-star">
+                    <use href="/__spritemap#sprite-tour-difficulty-star-fill"></use>
+                  </svg>
+                  <svg class="tours__tour-difficulty-star">
+                    <use href="/__spritemap#sprite-tour-difficulty-star-fill"></use>
+                  </svg>
+                  <svg class="tours__tour-difficulty-star">
+                    <use href="/__spritemap#sprite-tour-difficulty-star-fill"></use>
+                  </svg>
+                  <svg class="tours__tour-difficulty-star">
+                    <use href="/__spritemap#sprite-tour-difficulty-star-fill"></use>
+                  </svg>
+                  <svg class="tours__tour-difficulty-star">
+                    <use href="/__spritemap#sprite-tour-difficulty-star-empty"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="tours__tour-info-item">
+                <span class="tours__tour-info-header">Даты набора:</span>
+                <span class="tours__tour-info-text">12.06–19.06</span>
+              </div>
+              <div class="tours__tour-info-item">
+                <span class="tours__tour-info-header">Группа:</span>
+                <span class="tours__tour-info-text">до 15 чел.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="tours__watch-all" href="#">
+          Показать все туры
+          <svg class="tours__watch-all-icon">
+            <use href="/__spritemap#sprite-tours-link-arrow"></use>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="footer"></footer>
+<script type="module" src="js/main.js"></script>
+</body>
 
 </html>

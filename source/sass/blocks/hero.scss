@@ -1,0 +1,68 @@
+.hero__background-wrapper {
+  background-image: url("../../img/hero-backgorund-1x.webp");
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/hero-backgorund-2x.webp");
+  }
+  background-size: 320px 563px;
+  padding-top: 140px;
+  padding-bottom: 39px;
+}
+
+.hero__tour-header {
+  font-size: 26px;
+  font-weight: 800;
+  line-height: 26px;
+  color: #fff;
+  text-align: center;
+  margin: 0 0 15px;
+}
+
+.hero__tour-description {
+  font-size: 15px;
+  line-height: 20px;
+  color: #fff;
+  text-align: center;
+  width: 270px;
+  margin: 0 0 60px 25px;
+}
+
+.hero__watch-tour-button {
+  cursor: pointer;
+  border: none;
+  background-color: #0266c1;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+  padding: 21px 34px 20px 34px;
+  margin-left: 70px;
+  margin-bottom: 104px;
+}
+
+.hero__tour-pagination {
+  margin: 0 0 0 116px;
+}
+
+.hero__tour-pagination-list {
+  list-style-type: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.hero__tour-pagination-item {
+  cursor: pointer;
+  width: 14px;
+  height: 15px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  margin-right: 20px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.hero__tour-pagination-item--active {
+  background-color: #fff;
+}

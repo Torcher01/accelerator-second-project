@@ -1,8 +1,10 @@
 .tours__background-wrapper {
   background-image: url("../../img/tours-background-1x.webp");
-  @media (min-resolution: 2dppx) {
+
+  @media (resolution >= 2dppx) {
     background-image: url("../../img/tours-background-2x.webp");
   }
+
   background-repeat: no-repeat;
   background-position-x: 179px;
   background-position-y: -28px;
@@ -26,9 +28,11 @@
 
 .tours__tour-item--elbrus {
   background-image: url("../../img/tours/tour-background-elbrus-1x.webp");
-  @media (min-resolution: 2dppx) {
+
+  @media (resolution >= 2dppx) {
     background-image: url("../../img/tours/tour-background-elbrus-2x.webp");
   }
+
   background-size: 290px 416px;
   background-repeat: no-repeat;
 }
@@ -47,8 +51,6 @@
 }
 
 .tours__tour-place-icon {
-  width: 9px;
-  height: 12px;
   margin-left: 16px;
   margin-right: 9px;
 }
@@ -73,11 +75,6 @@
   margin-top: 3px;
 }
 
-.tours__tour-days-icon {
-  width: 20px;
-  height: 20px;
-}
-
 .tours__tour-nights {
   display: flex;
   margin-top: 6px;
@@ -89,8 +86,6 @@
 }
 
 .tours__tour-nights-icon {
-  width: 16px;
-  height: 16px;
   margin-right: 14px;
 }
 
@@ -99,7 +94,7 @@
 .tours__tour-nights-count {
   font-size: 12px;
   font-weight: 500;
-  color: #fff;
+  color: #ffffff;
 }
 
 .tours__tour-item-header {
@@ -107,18 +102,18 @@
   font-size: 24px;
   font-weight: 700;
   line-height: 28px;
-  color: #fff;
+  color: #ffffff;
   margin: 0 0 29px 20px;
   width: 220px;
 
-  &:before {
+  &::before {
     content: "";
     position: absolute;
     bottom: -15px;
     left: 0;
     width: 80px;
     height: 1px;
-    background-color: #fff;
+    background-color: #ffffff;
     opacity: 0.2;
   }
 }
@@ -142,24 +137,19 @@
   display: inline-block;
   font-size: 12px;
   font-weight: 300;
-  color: #fff;
+  color: #ffffff;
   margin-bottom: 3px;
 }
 
 .tours__tour-info-text {
   font-size: 13px;
   font-weight: 700;
-  color: #fff;
+  color: #ffffff;
   margin-top: 2px;
 }
 
 .tours__tour-difficulty-stars {
   display: flex;
-}
-
-.tours__tour-difficulty-star {
-  width: 17px;
-  height: 16px;
 }
 
 .tours__watch-all {
@@ -173,8 +163,6 @@
 }
 
 .tours__watch-all-icon {
-  width: 13px;
-  height: 13px;
   margin-left: 5px;
   margin-top: -2px;
   vertical-align: middle;

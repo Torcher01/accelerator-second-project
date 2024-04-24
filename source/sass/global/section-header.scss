@@ -6,7 +6,7 @@
   color: #2d383f;
   margin: 0;
 
-  &:before {
+  &::before {
     content: attr(value);
     position: absolute;
     z-index: -1;

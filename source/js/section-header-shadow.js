@@ -6,4 +6,4 @@ const setHeadersShadow = () => {
   });
 };
 
-export {setHeadersShadow}
+export {setHeadersShadow};

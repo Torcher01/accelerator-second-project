@@ -1,6 +1,9 @@
 .container {
   position: relative;
-  overflow: hidden;
   margin: 0 auto;
   width: 320px;
+}
+
+.container--overflow {
+  overflow: hidden;
 }

@@ -1,0 +1,53 @@
+.advantages__header {
+  text-align: center;
+  margin-top: 54px;
+  margin-bottom: 35px;
+}
+
+.advantages__items-wrapper {
+  margin-left: 15px;
+}
+
+.advantages__item {
+  border: 1px solid rgba(2, 102, 193, 0.1);
+  padding: 19px 0;
+  width: 288px;
+  margin-bottom: 15px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.advantages__item-icon {
+  margin-left: 123px;
+  margin-bottom: 16px;
+}
+
+.advantages__item-icon--expertise {
+  margin-bottom: 15px;
+}
+
+.advantages__item-icon--routes {
+  margin-bottom: 15px;
+}
+
+.advantages__item-header {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 14px;
+  text-align: center;
+  margin: 0 0 15px;
+}
+
+.advantages__item-header--nature {
+  width: 285px;
+}
+
+.advantages__item-text {
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+  width: 270px;
+  margin: 0 0 0 9px;
+}

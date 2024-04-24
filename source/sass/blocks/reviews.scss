@@ -1,0 +1,28 @@
+.reviews-header {
+  margin-top: 56px;
+  margin-bottom: 32px;
+  margin-left: 15px;
+}
+
+.reviews__review {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 20px;
+}
+
+.reviews__review-text {
+  font-size: 12px;
+  line-height: 18px;
+  margin: 0;
+}
+
+.reviews__review-name {
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.reviews__review-info {
+  font-size: 12px;
+  font-weight: 300;
+}

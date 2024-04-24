@@ -1,0 +1,32 @@
+.about__header {
+  margin-left: 15px;
+  margin-top: 11px;
+  margin-bottom: 39px;
+
+  &:before {
+    top: -13px;
+  }
+}
+
+.about__item {
+  margin-left: 15px;
+  margin-bottom: 26px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.about__item-header {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0 0 12px;
+}
+
+.about__item-text {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 20px;
+  margin: 0;
+  width: 270px;
+}

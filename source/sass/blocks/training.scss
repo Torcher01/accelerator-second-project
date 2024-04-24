@@ -1,0 +1,107 @@
+.training__header {
+  margin-top: 32px;
+  margin-bottom: 32px;
+  margin-left: 15px;
+}
+
+.training__info {
+  font-size: 14px;
+  line-height: 20px;
+  margin: 0 0 27px 15px;
+  width: 290px;
+}
+
+.training__instructors-header {
+  font-size: 22px;
+  font-weight: 800;
+  margin: 0 0 21px 15px;
+}
+
+.training__instructor-card {
+  border: 1px solid rgba(2, 102, 193, 0.1);
+  margin-left: 15px;
+  margin-bottom: 25px;
+  padding: 14px;
+  width: 260px;
+}
+
+.training__instructors-photo {
+  margin-bottom: 11px;
+}
+
+.training__instructor-card-flex-wrapper {
+  display: flex;
+  margin-bottom: 14px;
+}
+
+.training__instructor-name {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
+  margin: 0 125px 0 0;
+}
+
+.training__instructor-vk {
+  cursor: pointer;
+  display: inline-block;
+  border: 1px solid rgba(45, 56, 63, 0.3);
+  height: 21px;
+  margin-top: -1px;
+  padding: 0 2px 1px 3px;
+}
+
+.training__instructor-vk-icon {
+  margin-top: 7px;
+  width: 17px;
+  height: 8px;
+  fill: #2d383f;
+}
+
+.training__instructor-description {
+  font-size: 12px;
+  line-height: 16px;
+  margin: 0;
+  width: 240px;
+}
+
+.training__learning-process-header {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0 0 22px 15px;
+}
+
+.training__learning-process-points-icon {
+  position: absolute;
+  left: 0;
+  bottom: 455px;
+  width: 44px;
+  height: 197px;
+}
+
+.training__learning-process {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 0 41px 15px;
+}
+
+.training__learning-process-item {
+  display: flex;
+  font-size: 12px;
+  line-height: 18px;
+  margin-left: 30px;
+  margin-bottom: 25px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.training__learning-process-item-icon {
+  width: 24px;
+  height: 27px;
+  margin-right: 10px;
+}
+
+.training__learning-process-item-text {
+  width: 200px;
+}

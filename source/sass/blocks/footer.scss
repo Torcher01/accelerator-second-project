@@ -1,0 +1,65 @@
+.footer__logo {
+  margin-left: 89px;
+  margin-top: 24px;
+  margin-bottom: 17px;
+}
+
+.footer__navigation {
+  margin-left: 15px;
+  margin-bottom: 9px;
+  display: grid;
+  grid-template-columns: 120px 120px;
+  gap: 0 50px;
+}
+
+.footer__navigation-item {
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 13px;
+  text-decoration: none;
+  color: #2d383f;
+}
+
+.footer__social-links {
+  margin-left: 96px;
+  margin-bottom: 14px;
+}
+
+.footer__social-link {
+  position: relative;
+  display: inline-block;
+  border: 1px solid rgba(45, 56, 63, 0.3);
+  text-decoration: none;
+  text-align: center;
+  width: 30px;
+  height: 28px;
+  margin-right: 12px;
+}
+
+.footer__social-link-icon {
+  position: absolute;
+}
+
+.footer__social-link-icon--vk {
+  left: 6px;
+  top: 10px;
+}
+
+.footer__social-link-icon--ok {
+  left: 10px;
+  top: 6px;
+}
+
+.footer__social-link-icon--reddit {
+  left: 8px;
+  top: 4px;
+}
+
+.footer__privacy-policy {
+  font-size: 12px;
+  font-weight: 300;
+  margin-left: 61px;
+  padding-bottom: 20px;
+  text-decoration: none;
+  color: #2d383f;
+}

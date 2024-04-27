@@ -2,3 +2,8 @@ body {
   font-family: "Montserrat", "Arial", sans-serif;
   font-weight: 400;
 }
+
+img {
+  object-fit: cover;
+  object-position: center;
+}

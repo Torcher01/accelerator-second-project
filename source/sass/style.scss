@@ -6,7 +6,7 @@
 // ---------------------------------
 @import "global/fonts";
 @import "global/container";
-@import "global/body";
+@import "global/global";
 @import "global/visually-hidden";
 @import "global/section-header";
 
@@ -19,3 +19,6 @@
 @import "blocks/about";
 @import "blocks/reviews";
 @import "blocks/advantages";
+@import "blocks/gallery";
+@import "blocks/form";
+@import "blocks/footer";

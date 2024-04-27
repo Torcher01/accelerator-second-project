@@ -31,7 +31,7 @@
         <p class="hero__tour-description">В сопровождении опытных гидов вы пройдёте через потрясающие ландшафты
           и совершите восход на вершину горы Чегет.</p>
         <button class="hero__watch-tour-button" type="button">Смотреть тур</button>
-        <nav class="hero__tour-pagination">
+        <nav class="hero__tour-pagination" aria-label="Пагинация">
           <ul class="hero__tour-pagination-list">
             <li class="hero__tour-pagination-item hero__tour-pagination-item--active"></li>
             <li class="hero__tour-pagination-item"></li>
@@ -177,7 +177,8 @@
       <div class="about__item">
         <h3 class="about__item-header">История компании</h3>
         <p class="about__item-text">В далёком 2000 году мы начали заниматься туризмом — походы, поездки,
-          восхождения, <br>нам это настолько понравилось, <br>что мы этим стали жить. Спустя 5 лет, в 2005 году мы основали компанию,
+          восхождения, <br>нам это настолько понравилось, <br>что мы этим стали жить. Спустя 5 лет, в 2005 году мы
+          основали компанию,
           чтобы показывать людям удивительные места нашей страны.</p>
       </div>
       <div class="about__item">
@@ -217,7 +218,8 @@
             <use href="/__spritemap#sprite-advantages-security-icon"></use>
           </svg>
           <h3 class="advantages__item-header">Безопасность</h3>
-          <p class="advantages__item-text">Уделяем внимание безопасности клиентов, внедряя строгие процедуры и протоколы
+          <p class="advantages__item-text">Уделяем внимание безопасности клиентов, внедряя строгие процедуры<br> и
+            протоколы
             безопасности. Имеем планы действий на случай непредвиденных обстоятельств и даём гарантию полной
             безопасности во время всего тура.</p>
         </div>
@@ -227,7 +229,8 @@
           </svg>
           <h3 class="advantages__item-header">Экспертиза и знания</h3>
           <p class="advantages__item-text">Наша команда опытных гидов имеет обширные знания о местности, погодных
-            условиях и технике безопасности. <br>Это гарантирует, что наши клиенты находятся в надёжных руках и могут<br>
+            условиях и технике безопасности. <br>Это гарантирует, что наши клиенты находятся в надёжных руках и
+            могут<br>
             в полной мере насладиться опытом <br>без опасений.</p>
         </div>
         <div class="advantages__item">
@@ -236,7 +239,8 @@
           </svg>
           <h3 class="advantages__item-header">Оборудование и снаряжение</h3>
           <p class="advantages__item-text">Мы предоставляем клиентам <br>все необходимое оборудование, необходимое
-            для путешествия. <br>Это избавляет клиентов от необходимости покупать, брать с собой снаряжение, <br>что делает
+            для путешествия. <br>Это избавляет клиентов от необходимости покупать, брать с собой снаряжение, <br>что
+            делает
             путешествие более удобным <br>и экономически выгодным.</p>
         </div>
         <div class="advantages__item">
@@ -260,8 +264,127 @@
       </div>
     </div>
   </section>
+  <section class="gallery" data-test="gallery">
+    <div class="container container--overflow">
+      <h2 class="section-header gallery__header">Фотогалерея</h2>
+      <p class="gallery__description">Добавляйте фото в с хэштегом #лайфтур, а также отмечайте нас на фото. Лучшие
+        фотографии украсят этот раздел нашего сайта.</p>
+      <div class="gallery__photos">
+        <div class="gallery__long-photo">
+          <picture>
+            <img class="gallery__image" src="img/gallery/man-and-rocks-1x.webp" width="418" height="269" alt="Фотография мужчины на фоне гор"
+                 srcset="img/gallery/man-and-rocks-2x.webp 2x">
+          </picture>
+        </div>
+        <div class="gallery__small-photo">
+          <picture>
+            <img class="gallery__image" src="img/gallery/bonfire-party-1x.webp" width="204" height="149" alt="Вечеринка у костра"
+                 srcset="img/gallery/bonfire-party-2x.webp 2x">
+          </picture>
+        </div>
+        <div class="gallery__small-photo">
+          <picture>
+            <img class="gallery__image" src="img/gallery/compass-and-rocks-1x.webp" width="157" height="223"
+                 alt="Фотография компаса на фоне гор" srcset="img/gallery/compass-and-rocks-2x.webp 2x">
+          </picture>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="form" data-test="form">
+    <div class="container">
+      <div class="form__background-wrapper">
+        <h2 class="visually-hidden">Форма для связи</h2>
+        <h3 class="form__header">Остались вопросы?</h3>
+        <p class="form__description">Заполните форму и наш оператор свяжется<br> &nbsp;с вами для консультации.</p>
+        <form class="form__form" action="https://echo.htmlacademy.ru" method="post">
+          <label class="visually-hidden" for="phone">Введите телефон</label>
+          <input class="form__input" type="tel" name="phone" id="phone" placeholder="Телефон" required>
+          <label class="visually-hidden" for="email">Введите E-mail</label>
+          <input class="form__input" type="email" name="email" id="email" placeholder="Email" required>
+          <button class="form__form-submit" type="submit">Отправить</button>
+        </form>
+      </div>
+      <div class="form__contacts">
+        <h2 class="section-header form__contacts-header">Контакты</h2>
+        <p class="form__contacts-description">Свяжитесь с нами любым удобным для вас способом или приходите<br> к нам в
+          гости.
+          Мы будем рады поделиться увлекательными историями и подобрать для вас тур.</p>
+        <div class="form__contacts-item">
+          <div class="form__contacts-item-flex-wrapper">
+            <svg class="form__contacts-icon" width="22" height="21">
+              <use href="/__spritemap#sprite-phone-icon"></use>
+            </svg>
+            <h3 class="form__contacts-type">Телефон</h3>
+          </div>
+          <a class="form__contacts-content" href="tel:+79837454545">+7 983 745-45-45</a>
+        </div>
+        <div class="form__contacts-item">
+          <div class="form__contacts-item-flex-wrapper">
+            <svg class="form__contacts-icon" width="22" height="22">
+              <use href="/__spritemap#sprite-mail-icon"></use>
+            </svg>
+            <h3 class="form__contacts-type">Email</h3>
+          </div>
+          <a class="form__contacts-content" href="mailto:info@lifetour.com">info@lifetour.com</a>
+        </div>
+        <div class="form__contacts-item">
+          <div class="form__contacts-item-flex-wrapper">
+            <svg class="form__contacts-icon" width="22" height="20">
+              <use href="/__spritemap#sprite-address-icon"></use>
+            </svg>
+            <h3 class="form__contacts-type">Адрес</h3>
+          </div>
+          <span class="form__contacts-content">г. Москва, пр-т Мира, д. 14, офис 101</span>
+        </div>
+      </div>
+      <div class="form__map">
+        <picture>
+          <img class="form__map-image" src="img/map-mobile-1x.webp" width="320" height="343"
+               alt="Карта с расположением офиса" srcset="img/map-mobile-2x.webp 2x">
+        </picture>
+      </div>
+    </div>
+    <div class="form__map-border-bottom"></div>
+  </section>
 </main>
-<footer class="footer"></footer>
+<footer class="footer" data-test="footer">
+  <div class="container">
+    <h2 class="visually-hidden">Подвал сайта</h2>
+    <svg class="footer__logo" width="142" height="42">
+      <use href="/__spritemap#sprite-footer-logo"></use>
+    </svg>
+    <nav class="footer__navigation" aria-label="Навигация по сайту">
+      <a class="footer__navigation-item" href="#">Туры</a>
+      <a class="footer__navigation-item" href="#">Отзывы</a>
+      <a class="footer__navigation-item" href="#">Обучение</a>
+      <a class="footer__navigation-item" href="#">Фотографии</a>
+      <a class="footer__navigation-item" href="#">О нас</a>
+      <a class="footer__navigation-item" href="#">Контакты</a>
+    </nav>
+    <div class="footer__social-links">
+      <a class="footer__social-link" href="#">
+        <span class="visually-hidden">Ссылка на ВКонтакте</span>
+        <svg class="footer__social-link-icon footer__social-link-icon--vk" width="19" height="9">
+          <use href="/__spritemap#sprite-footer-vk-icon"></use>
+        </svg>
+      </a>
+      <a class="footer__social-link" href="#">
+        <span class="visually-hidden">Ссылка на Одноклассники</span>
+        <svg class="footer__social-link-icon footer__social-link-icon--ok" width="10" height="16">
+          <use href="/__spritemap#sprite-footer-ok-icon"></use>
+        </svg>
+      </a>
+      <a class="footer__social-link" href="#">
+        <span class="visually-hidden">Ссылка на Реддит</span>
+        <svg class="footer__social-link-icon footer__social-link-icon--reddit" width="15" height="19">
+          <use href="/__spritemap#sprite-footer-reddit-icon"></use>
+        </svg>
+      </a>
+    </div>
+    <a class="footer__privacy-policy" href="#">Политика конфиденциальности</a>
+  </div>
+</footer>
 <script type="module" src="js/main.js"></script>
 </body>
 

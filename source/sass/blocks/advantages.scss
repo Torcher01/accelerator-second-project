@@ -2,6 +2,11 @@
   text-align: center;
   margin-top: 54px;
   margin-bottom: 35px;
+
+  &::before {
+    top: -13px;
+    left: 51px;
+  }
 }
 
 .advantages__items-wrapper {

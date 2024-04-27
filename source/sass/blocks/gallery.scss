@@ -1,0 +1,39 @@
+.gallery__header {
+  margin-top: 55px;
+  margin-left: 15px;
+  margin-bottom: 25px;
+
+  &::before {
+    top: -13px;
+  }
+}
+
+.gallery__description {
+  font-size: 12px;
+  line-height: 18px;
+  width: 260px;
+  margin: 0 0 30px 15px;
+}
+
+.gallery__photos {
+  display: grid;
+  grid-template-columns: 160px 160px;
+  grid-template-rows: 147px 112px;
+  overflow: hidden;
+  gap: 9px 3px;
+  margin-bottom: 2px;
+}
+
+.gallery__image {
+  width: 100%;
+}
+
+.gallery__long-photo {
+  width: 158px;
+  grid-row: 1/3;
+}
+
+.gallery__small-photo {
+  width: 162px;
+  margin-top: -13px;
+}

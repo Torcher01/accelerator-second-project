@@ -25,3 +25,26 @@
   text-decoration: none;
   margin-left: 168px;
 }
+
+@media (min-width: $tablet-width) {
+  .header__flex-wrapper-tablet {
+    display: flex;
+  }
+
+  .header__burger-menu-icon {
+    margin-top: 17px;
+    margin-left: 30px;
+    margin-right: 242px;
+  }
+
+  .header__logo {
+    margin-top: 5px;
+    margin-bottom: 9px;
+  }
+
+  .header__phone {
+    font-size: 16px;
+    margin-left: 129px;
+    margin-top: 19px;
+  }
+}

@@ -9,6 +9,10 @@
   line-height: 20px;
   margin: 0 0 27px 15px;
   width: 290px;
+
+  & br {
+    display: none;
+  }
 }
 
 .training__instructors-header {
@@ -17,12 +21,20 @@
   margin: 0 0 21px 15px;
 }
 
+.training__instructors {
+  margin-left: 15px;
+}
+
 .training__instructor-card {
   border: 1px solid rgba(2, 102, 193, 0.1);
-  margin-left: 15px;
+  background-color: #fff;
   margin-bottom: 25px;
   padding: 14px;
   width: 260px;
+}
+
+.training__instructor-card--hidden {
+  display: none;
 }
 
 .training__instructors-photo {
@@ -98,4 +110,164 @@
 
 .training__learning-process-item-text {
   width: 200px;
+}
+
+@media (min-width: $tablet-width) {
+  .training__background-wrapper {
+    background-image: url("../../img/tablet/tours-background-1x.webp");
+
+    @media (resolution >= 2dppx) {
+      background-image: url("../../img/tablet/tours-background-2x.webp");
+    }
+
+    background-size: 602px 1630px;
+    background-position-x: 343px;
+    background-position-y: -712px;
+    background-repeat: no-repeat;
+  }
+
+  .training__header {
+    margin-top: 0;
+    padding-top: 75px;
+    margin-left: 45px;
+    margin-bottom: 33px;
+
+    &:before {
+      top: 59px;
+      left: 1px;
+    }
+  }
+
+  .training__info {
+    font-size: 16px;
+    line-height: 24px;
+    margin-left: 45px;
+    margin-bottom: 28px;
+    width: 680px;
+
+    & br {
+      display: inline;
+    }
+  }
+
+  .training__instructors-header {
+    font-size: 25px;
+    margin-left: 45px;
+    margin-bottom: 35px;
+  }
+
+  .training__instructors {
+    display: flex;
+    margin-left: 45px;
+  }
+
+  .training__instructor-card {
+    margin-left: 0;
+    width: auto;
+    margin-right: 20px;
+    margin-bottom: 0;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .training__instructor-card--hidden {
+    display: block;
+  }
+
+  .training__instructors-photo {
+    width: 183px;
+    height: 200px;
+  }
+
+  .training__instructors-photo--kolesnichenko {
+    width: 182.67px;
+  }
+
+  .training__instructor-description {
+    width: 180px;
+  }
+
+  .training__instructor-name {
+    width: 158px;
+    margin-right: 0;
+  }
+
+  .training__learning-process-header {
+    background-image: url("../../img/tablet/training-cloud-background-1x.webp");
+
+    @media (resolution >= 2dppx) {
+      background-image: url("../../img/tablet/training-cloud-background-2x.webp");
+    }
+    background-repeat: no-repeat;
+    background-size: 840px 280px;
+    background-position-x: 258px;
+    background-position-y: -59px;
+    font-size: 18px;
+    margin-left: 45px;
+    padding-top: 26px;
+    padding-bottom: 99px;
+    margin-bottom: 0;
+  }
+
+  .training__learning-process-points-icon {
+    display: none;
+  }
+
+  .training__learning-process {
+    display: grid;
+    grid-template-columns: 300px 300px;
+    grid-template-areas:
+    "movement difficulty"
+    "equipment lectures";
+    gap: 79px 106px;
+    margin-left: 45px;
+  }
+
+  .training__learning-process-item--movement {
+    grid-area: movement;
+  }
+
+  .training__learning-process-item--equipment {
+    grid-area: equipment;
+  }
+
+  .training__learning-process-item--lectures {
+    grid-area: lectures;
+  }
+
+  .training__learning-process-item--difficulty {
+    grid-area: difficulty;
+  }
+
+  .training__learning-process-item {
+    margin-left: 0;
+  }
+
+  .training__learning-process-item-text {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .training__learning-process-item-icon {
+    width: 25px;
+    height: 25px;
+    margin-top: 2px;
+    margin-right: 10px;
+  }
+
+  .training__learning-process-item-icon--tree {
+    width: 23px;
+    height: 23px;
+  }
+
+  .training__learning-process-item-icon--boot {
+    width: 24px;
+    height: 24px;
+  }
+
+  .training__learning-process-item-icon--mountain {
+    width: 25px;
+  }
 }

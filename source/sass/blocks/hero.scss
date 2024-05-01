@@ -1,10 +1,10 @@
 .hero__background-wrapper {
-  background-image: url("../../img/hero-backgorund-1x.webp");
+  background-image: url("../../img/mobile/hero-backgorund-1x.webp");
 
   @media (resolution >= 2dppx) {
-    background-image: url("../../img/hero-backgorund-2x.webp");
+    background-image: url("../../img/mobile/hero-backgorund-2x.webp");
   }
-
+  background-repeat: no-repeat;
   background-size: 320px 568px;
   padding-top: 145px;
   padding-bottom: 40px;
@@ -67,4 +67,46 @@
 
 .hero__tour-pagination-item--active {
   background-color: #ffffff;
+}
+
+@media (min-width: $tablet-width) {
+  .hero__background-wrapper {
+    background-image: url("../../img/tablet/hero-backgorund-1x.webp");
+
+    @media (resolution >= 2dppx) {
+      background-image: url("../../img/tablet/hero-backgorund-2x.webp");
+    }
+    background-size: 768px 1034px;
+
+    padding-top: 342px;
+    padding-bottom: 40px;
+  }
+
+  .hero__tour-header {
+    font-size: 56px;
+    line-height: 56px;
+    margin-bottom: 13px;
+  }
+
+  .hero__tour-description {
+    font-size: 17px;
+    line-height: 24px;
+    width: 474px;
+    margin-left: 147px;
+    margin-bottom: 37px;
+  }
+
+  .hero__watch-tour-button {
+    margin-left: 294px;
+    margin-bottom: 341px;
+  }
+
+  .hero__tour-pagination {
+    margin-left: 334px;
+  }
+
+  .hero__tour-pagination-item {
+    width: 18px;
+    height: 18px;
+  }
 }

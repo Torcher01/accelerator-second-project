@@ -17,3 +17,13 @@
     left: 0;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .section-header {
+    font-size: 25px;
+
+    &:before {
+      font-size: 40px;
+    }
+  }
+}

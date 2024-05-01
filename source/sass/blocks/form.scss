@@ -3,13 +3,13 @@
 }
 
 .form__background-wrapper {
-  background-image: url("../../img/form_mobile_background-1x.webp");
+  background-image: url("../../img/mobile/form_background-1x.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position-x: -35px;
 
   @media (resolution >= 2dppx) {
-    background-image: url("../../img/form_mobile_background-2x.webp");
+    background-image: url("../../img/mobile/form_background-2x.webp");
   }
 
   background-color: #000000;

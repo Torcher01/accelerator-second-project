@@ -12,15 +12,17 @@
 <header class="header" data-test="header">
   <div class="container">
     <h1 class="header__page-header visually-hidden">Компания "Lifetour". Организация походов в горы.</h1>
-    <div class="header__flex-wrapper">
-      <svg class="header__burger-menu-icon" width="26" height="19">
-        <use href="/__spritemap#sprite-header-burger"></use>
-      </svg>
-      <svg class="header__logo" width="142" height="42">
-        <use href="/__spritemap#sprite-header-logo"></use>
-      </svg>
+    <div class="header__flex-wrapper-tablet">
+      <div class="header__flex-wrapper">
+        <svg class="header__burger-menu-icon" width="26" height="19">
+          <use href="/__spritemap#sprite-header-burger"></use>
+        </svg>
+        <svg class="header__logo" width="142" height="42">
+          <use href="/__spritemap#sprite-header-logo"></use>
+        </svg>
+      </div>
+      <a class="header__phone" href="tel:88000000000">8 800 000-00-00</a>
     </div>
-    <a class="header__phone" href="tel:88000000000">8 800 000-00-00</a>
   </div>
 </header>
 <main class="main">
@@ -101,6 +103,61 @@
               </div>
             </div>
           </div>
+          <div class="tours__tour-item tours__tour-item--beluha">
+            <div class="tours__tour-options">
+              <div class="tours__tour-place tours__tour-place--beluha">
+                <svg class="tours__tour-place-icon" width="9" height="12">
+                  <use href="/__spritemap#sprite-tour-place-icon"></use>
+                </svg>
+                <span class="tours__tour-place-name">Алтай</span>
+              </div>
+              <div class="tours__tour-days">
+                <svg class="tours__tour-days-icon" width="20" height="20">
+                  <use href="/__spritemap#sprite-tour-days-icon"></use>
+                </svg>
+                <span class="tours__tour-days-count">14 дней</span>
+              </div>
+              <div class="tours__tour-nights">
+                <svg class="tours__tour-nights-icon" width="16" height="16">
+                  <use href="/__spritemap#sprite-tour-nights-icon"></use>
+                </svg>
+                <span class="tours__tour-nights-count">13 ночей</span>
+              </div>
+            </div>
+            <h3 class="tours__tour-item-header">
+              Путь к подножию Белухи
+            </h3>
+            <div class="tours__tour-info">
+              <div class="tours__tour-info-item tours__tour-info-item--beluha">
+                <span class="tours__tour-info-header">Сложность:</span>
+                <div class="tours__tour-difficulty-stars">
+                  <svg class="tours__tour-difficulty-star" width="17" height="16">
+                    <use href="/__spritemap#sprite-tour-difficulty-star-fill"></use>
+                  </svg>
+                  <svg class="tours__tour-difficulty-star" width="17" height="16">
+                    <use href="/__spritemap#sprite-tour-difficulty-star-fill"></use>
+                  </svg>
+                  <svg class="tours__tour-difficulty-star" width="17" height="16">
+                    <use href="/__spritemap#sprite-tour-difficulty-star-fill"></use>
+                  </svg>
+                  <svg class="tours__tour-difficulty-star" width="17" height="16">
+                    <use href="/__spritemap#sprite-tour-difficulty-star-empty"></use>
+                  </svg>
+                  <svg class="tours__tour-difficulty-star" width="17" height="16">
+                    <use href="/__spritemap#sprite-tour-difficulty-star-empty"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="tours__tour-info-item">
+                <span class="tours__tour-info-header">Даты набора:</span>
+                <span class="tours__tour-info-text">14.06–23.06</span>
+              </div>
+              <div class="tours__tour-info-item">
+                <span class="tours__tour-info-header">Группа:</span>
+                <span class="tours__tour-info-text">до 25 чел.</span>
+              </div>
+            </div>
+          </div>
         </div>
         <a class="tours__watch-all" href="#">
           Показать все туры
@@ -113,62 +170,109 @@
   </section>
   <section class="training" data-test="training">
     <div class="container container--overflow">
-      <h2 class="training__header section-header">Обучение</h2>
-      <p class="training__info">Обучение проводится квалифицированными специалистами, за плечами которых десятки
-        пройденных маршрутов Кавказа, Крыма, Гималаев, Эльбруса, Алтая, Карелии, Адыгеи и других.</p>
-      <h3 class="training__instructors-header">Наши инструкторы</h3>
-      <div class="training__instructor-card">
-        <picture>
-          <img class="training__instructors-photo" src="img/instructors/nadejda-kolesnichenko-1x.webp"
-               alt="Фотография инструктора" width="260" height="200"
-               srcset="img/instructors/nadejda-kolesnichenko-2x.webp 2x">
-        </picture>
-        <div class="training__instructor-card-flex-wrapper">
-          <h4 class="training__instructor-name">Надежда<br> Колесниченко</h4>
-          <a class="training__instructor-vk" href="#">
-            <span class="visually-hidden">Надежда Колесниченко ссылка ВКонтакте</span>
-            <svg class="training__instructor-vk-icon" width="17" height="8">
-              <use href="/__spritemap#sprite-training-icon_vk"></use>
-            </svg>
-          </a>
+      <div class="training__background-wrapper">
+        <h2 class="training__header section-header">Обучение</h2>
+        <p class="training__info">Обучение проводится квалифицированными специалистами,<br> за плечами которых десятки
+          пройденных маршрутов Кавказа, Крыма, Гималаев, Эльбруса, Алтая, Карелии, Адыгеи и других.</p>
+        <h3 class="training__instructors-header">Наши инструкторы</h3>
+        <div class="training__instructors">
+          <div class="training__instructor-card training__instructor-card--hidden">
+            <picture>
+              <source media="(min-width: 768px)"
+                      srcset="img/tablet/instructors/alexandr-prokofiev-1x.webp, img/tablet/instructors/alexandr-prokofiev-2x.webp 2x">
+              <img class="training__instructors-photo" src="img/mobile/instructors/nadejda-kolesnichenko-1x.webp"
+                   alt="Фотография инструктора" width="260" height="200"
+                   srcset="img/mobile/instructors/nadejda-kolesnichenko-2x.webp 2x">
+            </picture>
+            <div class="training__instructor-card-flex-wrapper">
+              <h4 class="training__instructor-name">Александр<br> Прокофьев</h4>
+              <a class="training__instructor-vk" href="#">
+                <span class="visually-hidden">Александр Прокофьев ссылка ВКонтакте</span>
+                <svg class="training__instructor-vk-icon" width="17" height="8">
+                  <use href="/__spritemap#sprite-training-icon_vk"></use>
+                </svg>
+              </a>
+            </div>
+            <p class="training__instructor-description">Строгий и внимательный инструктор, весёлый<br> и общительный
+              человек.
+              Любит природу.</p>
+          </div>
+          <div class="training__instructor-card training__instructor-card--hidden">
+            <picture>
+              <source media="(min-width: 768px)"
+                      srcset="img/tablet/instructors/svetlana-afinogenova-1x.webp, img/tablet/instructors/svetlana-afinogenova-2x.webp 2x">
+              <img class="training__instructors-photo" src="img/mobile/instructors/nadejda-kolesnichenko-1x.webp"
+                   alt="Фотография инструктора" width="260" height="200"
+                   srcset="img/mobile/instructors/nadejda-kolesnichenko-2x.webp 2x">
+            </picture>
+            <div class="training__instructor-card-flex-wrapper">
+              <h4 class="training__instructor-name">Светлана<br> Афиногенова</h4>
+              <a class="training__instructor-vk" href="#">
+                <span class="visually-hidden">Светлана Афиногенова ссылка ВКонтакте</span>
+                <svg class="training__instructor-vk-icon" width="17" height="8">
+                  <use href="/__spritemap#sprite-training-icon_vk"></use>
+                </svg>
+              </a>
+            </div>
+            <p class="training__instructor-description">Видеть мир вокруг, познавать его опасности, находить друг друга,
+              становиться ближе, чувствовать — в этом назначение жизни.</p>
+          </div>
+          <div class="training__instructor-card training__instructor-card--kolesnichenko">
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/tablet/instructors/nadejda-kolesnichenko-1x.webp, img/tablet/instructors/nadejda-kolesnichenko-2x.webp 2x">
+              <img class="training__instructors-photo training__instructors-photo--kolesnichenko" src="img/mobile/instructors/nadejda-kolesnichenko-1x.webp"
+                   alt="Фотография инструктора" width="260" height="200"
+                   srcset="img/mobile/instructors/nadejda-kolesnichenko-2x.webp 2x">
+            </picture>
+            <div class="training__instructor-card-flex-wrapper">
+              <h4 class="training__instructor-name">Надежда<br> Колесниченко</h4>
+              <a class="training__instructor-vk" href="#">
+                <span class="visually-hidden">Надежда Колесниченко ссылка ВКонтакте</span>
+                <svg class="training__instructor-vk-icon" width="17" height="8">
+                  <use href="/__spritemap#sprite-training-icon_vk"></use>
+                </svg>
+              </a>
+            </div>
+            <p class="training__instructor-description">Участники говорят,<br> что Надежда ответственная, приятная в
+              общении,<br> и в поездках<br> с ней чувствуешь себя спокойно и уверенно.</p>
+          </div>
         </div>
-        <p class="training__instructor-description">Участники говорят, что Надежда ответственная, приятная в общении, и
-          в поездках с ней чувствуешь себя спокойно и уверенно.</p>
+        <h3 class="training__learning-process-header">Процесс обучения</h3>
+        <svg class="training__learning-process-points-icon" width="44" height="197">
+          <use href="/__spritemap#sprite-learning-points"></use>
+        </svg>
+        <ul class="training__learning-process">
+          <li class="training__learning-process-item training__learning-process-item--movement">
+            <svg class="training__learning-process-item-icon" width="24" height="27">
+              <use href="/__spritemap#sprite-learning-map-icon"></use>
+            </svg>
+            <span class="training__learning-process-item-text">Изучение спортивного туристского движения</span>
+          </li>
+          <li class="training__learning-process-item training__learning-process-item--equipment">
+            <svg class="training__learning-process-item-icon training__learning-process-item-icon--boot" width="24" height="27">
+              <use href="/__spritemap#sprite-learning-boot-icon"></use>
+            </svg>
+            <span class="training__learning-process-item-text">Подготовка и техническое снаряжение в походах</span>
+          </li>
+          <li class="training__learning-process-item training__learning-process-item--lectures">
+            <svg class="training__learning-process-item-icon training__learning-process-item-icon--tree" width="24" height="27">
+              <use href="/__spritemap#sprite-learning-tree-icon"></use>
+            </svg>
+            <span class="training__learning-process-item-text">Лекции по окружающей среде, экологии и гигиене</span>
+          </li>
+          <li class="training__learning-process-item training__learning-process-item--difficulty">
+            <svg class="training__learning-process-item-icon training__learning-process-item-icon--mountain" width="24" height="27">
+              <use href="/__spritemap#sprite-learning-mountain-icon"></use>
+            </svg>
+            <span class="training__learning-process-item-text">Разъяснение сложности горных препятствий</span>
+          </li>
+        </ul>
+        <picture>
+          <img class="training__learning-process-image" src="img/mobile/learning-group-image-1x.webp" width="434"
+               height="400"
+               srcset="img/mobile/learning-group-image-2x.webp 2x" alt="Фотография группы, спускающейся по горам">
+        </picture>
       </div>
-      <h3 class="training__learning-process-header">Процесс обучения</h3>
-      <svg class="training__learning-process-points-icon" width="44" height="197">
-        <use href="/__spritemap#sprite-learning-points"></use>
-      </svg>
-      <ul class="training__learning-process">
-        <li class="training__learning-process-item">
-          <svg class="training__learning-process-item-icon" width="24" height="27">
-            <use href="/__spritemap#sprite-learning-map-icon"></use>
-          </svg>
-          <span class="training__learning-process-item-text">Изучение спортивного туристского движения</span>
-        </li>
-        <li class="training__learning-process-item">
-          <svg class="training__learning-process-item-icon" width="24" height="27">
-            <use href="/__spritemap#sprite-learning-boot-icon"></use>
-          </svg>
-          <span class="training__learning-process-item-text">Подготовка и техническое снаряжение в походах</span>
-        </li>
-        <li class="training__learning-process-item">
-          <svg class="training__learning-process-item-icon" width="24" height="27">
-            <use href="/__spritemap#sprite-learning-tree-icon"></use>
-          </svg>
-          <span class="training__learning-process-item-text">Лекции по окружающей среде, экологии и гигиене</span>
-        </li>
-        <li class="training__learning-process-item">
-          <svg class="training__learning-process-item-icon" width="24" height="27">
-            <use href="/__spritemap#sprite-learning-mountain-icon"></use>
-          </svg>
-          <span class="training__learning-process-item-text">Разъяснение сложности горных препятствий</span>
-        </li>
-      </ul>
-      <picture>
-        <img class="training__learning-process-image" src="img/learning-group-image-1x.webp" width="434" height="400"
-             srcset="img/learning-group-image-2x.webp 2x" alt="Фотография группы, спускающейся по горам">
-      </picture>
     </div>
   </section>
   <section class="about" data-test="about">
@@ -195,8 +299,9 @@
       <h2 class="section-header reviews-header">Отзывы</h2>
       <div class="reviews__review">
         <picture>
-          <img class="reviews__review-image" src="img/reviews/frolov-alexander-photo-1x.webp" width="250" height="169"
-               alt="Фотография написавшего отзыв" srcset="img/reviews/frolov-alexander-photo-2x.webp 2x">
+          <img class="reviews__review-image" src="img/mobile/reviews/frolov-alexander-photo-1x.webp" width="250"
+               height="169"
+               alt="Фотография написавшего отзыв" srcset="img/mobile/reviews/frolov-alexander-photo-2x.webp 2x">
         </picture>
         <p class="reviews__review-text">Осенью ходили в поход на Алтай<br> с друзьями. Впечатления потрясающие!
           Инструкторы,
@@ -272,20 +377,22 @@
       <div class="gallery__photos">
         <div class="gallery__long-photo">
           <picture>
-            <img class="gallery__image" src="img/gallery/man-and-rocks-1x.webp" width="418" height="269" alt="Фотография мужчины на фоне гор"
-                 srcset="img/gallery/man-and-rocks-2x.webp 2x">
+            <img class="gallery__image" src="img/mobile/gallery/man-and-rocks-1x.webp" width="418" height="269"
+                 alt="Фотография мужчины на фоне гор"
+                 srcset="img/mobile/gallery/man-and-rocks-2x.webp 2x">
           </picture>
         </div>
         <div class="gallery__small-photo">
           <picture>
-            <img class="gallery__image" src="img/gallery/bonfire-party-1x.webp" width="204" height="149" alt="Вечеринка у костра"
-                 srcset="img/gallery/bonfire-party-2x.webp 2x">
+            <img class="gallery__image" src="img/mobile/gallery/bonfire-party-1x.webp" width="204" height="149"
+                 alt="Вечеринка у костра"
+                 srcset="img/mobile/gallery/bonfire-party-2x.webp 2x">
           </picture>
         </div>
         <div class="gallery__small-photo">
           <picture>
-            <img class="gallery__image" src="img/gallery/compass-and-rocks-1x.webp" width="157" height="223"
-                 alt="Фотография компаса на фоне гор" srcset="img/gallery/compass-and-rocks-2x.webp 2x">
+            <img class="gallery__image" src="img/mobile/gallery/compass-and-rocks-1x.webp" width="157" height="223"
+                 alt="Фотография компаса на фоне гор" srcset="img/mobile/gallery/compass-and-rocks-2x.webp 2x">
           </picture>
         </div>
       </div>
@@ -340,8 +447,8 @@
       </div>
       <div class="form__map">
         <picture>
-          <img class="form__map-image" src="img/map-mobile-1x.webp" width="320" height="343"
-               alt="Карта с расположением офиса" srcset="img/map-mobile-2x.webp 2x">
+          <img class="form__map-image" src="img/mobile/map-mobile-1x.webp" width="320" height="343"
+               alt="Карта с расположением офиса" srcset="img/mobile/map-mobile-2x.webp 2x">
         </picture>
       </div>
     </div>

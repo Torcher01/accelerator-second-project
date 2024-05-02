@@ -135,9 +135,11 @@
 @media (min-width: $tablet-width) {
   .form__background-wrapper {
     background-image: url("../../img/tablet/form_background-1x.webp");
+
     @media (resolution >= 2dppx) {
       background-image: url("../../img/tablet/form_background-2x.webp");
     }
+
     background-position-x: 0;
     padding-top: 182px;
     padding-bottom: 181px;
@@ -157,11 +159,12 @@
     text-align: left;
     margin-left: 238px;
     margin-bottom: 25px;
-
-    & br {
-      display: none;
-    }
   }
+
+  .form__description-br {
+    display: none;
+  }
+
   .form__input {
     display: block;
     margin-left: 173px;
@@ -188,7 +191,7 @@
     margin-left: 30px;
     margin-bottom: 19px;
 
-    &:before {
+    &::before {
       top: -16px;
     }
   }
@@ -199,10 +202,10 @@
     width: 480px;
     margin-left: 30px;
     margin-bottom: 39px;
+  }
 
-    & br {
-      display: none;
-    }
+  .form__contacts-description-br {
+    display: none;
   }
 
   .form__contacts-flex-wrapper {

@@ -9,10 +9,10 @@
   line-height: 20px;
   margin: 0 0 27px 15px;
   width: 290px;
+}
 
-  & br {
-    display: none;
-  }
+.training__info-tablet-br {
+  display: none;
 }
 
 .training__instructors-header {
@@ -27,7 +27,7 @@
 
 .training__instructor-card {
   border: 1px solid rgba(2, 102, 193, 0.1);
-  background-color: #fff;
+  background-color: #ffffff;
   margin-bottom: 25px;
   padding: 14px;
   width: 260px;
@@ -132,7 +132,7 @@
     margin-left: 45px;
     margin-bottom: 33px;
 
-    &:before {
+    &::before {
       top: 59px;
       left: 1px;
     }
@@ -144,10 +144,10 @@
     margin-left: 45px;
     margin-bottom: 28px;
     width: 680px;
+  }
 
-    & br {
-      display: inline;
-    }
+  .training__info-tablet-br {
+    display: inline;
   }
 
   .training__flex-wrapper {
@@ -214,6 +214,7 @@
     @media (resolution >= 2dppx) {
       background-image: url("../../img/tablet/training-cloud-background-2x.webp");
     }
+
     background-repeat: no-repeat;
     background-size: 840px 280px;
     background-position-x: 258px;
@@ -233,8 +234,8 @@
     display: grid;
     grid-template-columns: 300px 300px;
     grid-template-areas:
-    "movement difficulty"
-    "equipment lectures";
+      "movement  difficulty"
+      "equipment lectures";
     gap: 79px 106px;
     margin-left: 45px;
     margin-bottom: 64px;

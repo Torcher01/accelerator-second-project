@@ -62,7 +62,7 @@
     margin-top: 88px;
     margin-bottom: 59px;
 
-    &:before {
+    &::before {
       top: -16px;
       left: 134px;
     }
@@ -70,9 +70,11 @@
 
   .advantages__items-wrapper {
     background-image: url("../../img/tablet/advantages-clouds-background-1x.webp");
+
     @media (resolution >= 2dppx) {
       background-image: url("../../img/tablet/advantages-clouds-background-2x.webp");
     }
+
     background-repeat: no-repeat;
     background-size: 2091px 996px;
     background-position-x: -661px;
@@ -87,7 +89,7 @@
   .advantages__item {
     padding: 29px 0;
     width: 322px;
-    background-color: #fff;
+    background-color: #ffffff;
   }
 
   .advantages__item--nature {

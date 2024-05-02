@@ -150,10 +150,24 @@
     }
   }
 
+  .training__flex-wrapper {
+    display: flex;
+  }
+
   .training__instructors-header {
     font-size: 25px;
     margin-left: 45px;
     margin-bottom: 35px;
+    margin-right: 331px;
+  }
+
+  .training__slider-button-left {
+    margin-right: 4px;
+  }
+
+  .training__slider-button-left,
+  .training__slider-button-right {
+    margin-top: -1px;
   }
 
   .training__instructors {

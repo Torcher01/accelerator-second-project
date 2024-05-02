@@ -178,11 +178,25 @@
 
     background-size: 602px 1630px;
     background-position-x: 343px;
-    background-position-y: -150px;
+    background-position-y: -92px;
   }
 
   .tours__header {
-    margin: 58px 0 33px 45px;
+    margin: 58px 355px 33px 45px;
+  }
+
+  .tours__flex-wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  .tours__slider-button-left {
+    margin-right: 4px;
+  }
+
+  .tours__slider-button-left,
+  .tours__slider-button-right {
+    margin-top: 35px;
   }
 
   .tours__tours-list {

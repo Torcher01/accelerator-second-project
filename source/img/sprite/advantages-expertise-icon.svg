@@ -1,1 +1,13 @@
-<svg width="42.000000" height="42.000000" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><clipPath id="clip26_507"><rect id="icon/crown" width="24.000000" height="24.000000" transform="translate(9.000000 9.000000)" fill="white" fill-opacity="0"/></clipPath></defs><g clip-path="url(#clip26_507)"><path id="icon/crown" d="M28.71 27.33L13.28 27.33L10.09 16.75L16.38 20.57L21 11.18L25.61 20.57L31.9 16.75L28.71 27.33ZM28.29 30.81L13.7 30.81" stroke="#0266C1" stroke-opacity="1.000000" stroke-width="1.000000"/></g><rect id="icon" rx="-0.500000" width="41.000000" height="41.000000" transform="translate(0.500000 0.500000)" stroke="#0266C1" stroke-opacity="1.000000" stroke-width="1.000000"/></svg>
+<svg width="24.000000" height="24.000000" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<clipPath id="clip18_415">
+			<rect id="icon/crown" width="24.000000" height="24.000000" fill="white" fill-opacity="0"/>
+		</clipPath>
+	</defs>
+	<g clip-path="url(#clip18_415)">
+		<path id="icon/crown" d="M19.71 18.33L4.28 18.33L1.09 7.75L7.38 11.57L12 2.18L16.61 11.57L22.9 7.75L19.71 18.33ZM19.29 21.81L4.7 21.81" stroke="#0266C1" stroke-opacity="1.000000" stroke-width="1.000000"/>
+	</g>
+</svg>

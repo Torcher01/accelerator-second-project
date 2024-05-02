@@ -63,3 +63,55 @@
   text-decoration: none;
   color: #2d383f;
 }
+
+@media (min-width: $tablet-width) {
+  .footer__flex-wrapper {
+    display: flex;
+    margin-top: 70px;
+    margin-left: 45px;
+    margin-bottom: 17px;
+  }
+
+  .footer__logo {
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 43px;
+  }
+
+  .footer__navigation {
+    display: flex;
+    gap: 0;
+    align-items: center;
+    margin-top: 5px;
+    margin-left: 0;
+  }
+
+  .footer__navigation-item {
+    margin-right: 23px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .footer__navigation-item--learning {
+    margin-right: 25px;
+  }
+
+  .footer__navigation-item--reviews {
+    margin-right: 25px;
+  }
+
+  .footer__navigation-item--photos {
+    margin-right: 26px;
+  }
+
+  .footer__social-links {
+    margin-left: 320px;
+    margin-bottom: 26px;
+  }
+
+  .footer__privacy-policy {
+    margin-left: 285px;
+  }
+}

@@ -30,3 +30,55 @@
   margin: 0;
   width: 270px;
 }
+
+@media (min-width: $tablet-width) {
+  .about__flex-wrapper {
+    display: flex;
+  }
+
+  .about__image {
+    width: 542px;
+    height: 350px;
+    margin-top: 127px;
+  }
+
+  .about__content {
+    margin-top: 11px;
+    margin-left: -107px;
+  }
+
+  .about__header {
+    margin-top: 0;
+    margin-bottom: 45px;
+
+    &:before {
+      top: -16px;
+    }
+  }
+
+  .about__item {
+    margin-bottom: 28px;
+  }
+
+  .about__item-header {
+    font-size: 18px;
+    margin-bottom: 9px;
+  }
+
+  .about__item-header--target {
+    margin-bottom: 10px;
+  }
+
+  .about__item-text {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .about__mobile-br {
+    display: none;
+  }
+
+  .about__tablet-br {
+    display: inline;
+  }
+}

@@ -130,3 +130,118 @@
   background-color: #2d383f;
   opacity: 0.2;
 }
+
+
+@media (min-width: $tablet-width) {
+  .form__background-wrapper {
+    background-image: url("../../img/tablet/form_background-1x.webp");
+    @media (resolution >= 2dppx) {
+      background-image: url("../../img/tablet/form_background-2x.webp");
+    }
+    background-position-x: 0;
+    padding-top: 182px;
+    padding-bottom: 181px;
+    margin-bottom: 58px;
+  }
+
+  .form__header {
+    font-size: 25px;
+    margin-left: 244px;
+    margin-bottom: 26px;
+  }
+
+  .form__description {
+    font-size: 16px;
+    line-height: 24px;
+    width: 360px;
+    text-align: left;
+    margin-left: 238px;
+    margin-bottom: 25px;
+
+    & br {
+      display: none;
+    }
+  }
+  .form__input {
+    display: block;
+    margin-left: 173px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 30px;
+    width: 328px;
+    margin-bottom: 12px;
+  }
+
+  .form__form-submit {
+    margin-left: 173px;
+    padding-top: 2px;
+    padding-bottom: 0;
+    width: 360px;
+    height: 55px;
+  }
+
+  .form__contacts {
+    margin-bottom: 11px;
+  }
+
+  .form__contacts-header {
+    margin-left: 30px;
+    margin-bottom: 19px;
+
+    &:before {
+      top: -16px;
+    }
+  }
+
+  .form__contacts-description {
+    font-size: 16px;
+    line-height: 24px;
+    width: 480px;
+    margin-left: 30px;
+    margin-bottom: 39px;
+
+    & br {
+      display: none;
+    }
+  }
+
+  .form__contacts-flex-wrapper {
+    display: flex;
+    margin-left: 30px;
+  }
+
+  .form__contacts-item {
+    width: 193px;
+
+    &:last-child {
+      margin-left: 6px;
+    }
+  }
+
+  .form__contacts-type {
+    font-size: 16px;
+    margin-bottom: 0;
+  }
+
+  .form__contacts-content {
+    margin-top: -1px;
+    width: 270px;
+    margin-left: 34px;
+  }
+
+  .form__contacts-icon {
+    width: 25px;
+    height: 24px;
+    margin-top: 0;
+    margin-right: 10px;
+  }
+
+  .form__map-image {
+    width: 768px;
+    height: 340px;
+  }
+
+  .form__map-border-bottom {
+    bottom: -36px;
+  }
+}

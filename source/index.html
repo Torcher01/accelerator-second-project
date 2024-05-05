@@ -20,6 +20,14 @@
         <svg class="header__logo" width="142" height="42">
           <use href="/__spritemap#sprite-header-logo"></use>
         </svg>
+        <nav class="header__navigation" aria-label="Навигация по сайту">
+          <a class="header__navigation-item" href="#">Туры</a>
+          <a class="header__navigation-item header__navigation-item--learning" href="#">Обучение</a>
+          <a class="header__navigation-item" href="#">О нас</a>
+          <a class="header__navigation-item header__navigation-item--reviews" href="#">Отзывы</a>
+          <a class="header__navigation-item" href="#">Фотографии</a>
+          <a class="header__navigation-item" href="#">Контакты</a>
+        </nav>
       </div>
       <a class="header__phone" href="tel:88000000000">8 800 000-00-00</a>
     </div>
@@ -33,13 +41,27 @@
         <p class="hero__tour-description">В сопровождении опытных гидов вы пройдёте через потрясающие ландшафты
           и совершите восход на вершину горы Чегет.</p>
         <button class="hero__watch-tour-button" type="button">Смотреть тур</button>
-        <nav class="hero__tour-pagination" aria-label="Пагинация">
-          <ul class="hero__tour-pagination-list">
-            <li class="hero__tour-pagination-item hero__tour-pagination-item--active"></li>
-            <li class="hero__tour-pagination-item"></li>
-            <li class="hero__tour-pagination-item"></li>
-          </ul>
-        </nav>
+        <div class="hero__pagination-wrapper">
+          <div class="hero__tour-info-item">
+            <svg class="hero__tour-info-icon" width="12" height="12">
+              <use href="/__spritemap#sprite-hero-tour-duration-icon"></use>
+            </svg>
+            <span class="hero__tour-info-text">6 дней/5 ночей</span>
+          </div>
+          <div class="hero__tour-info-item">
+            <svg class="hero__tour-info-icon" width="12" height="12">
+              <use href="/__spritemap#sprite-hero-tour-difficulty-icon"></use>
+            </svg>
+            <span class="hero__tour-info-text">Высокая сложность</span>
+          </div>
+          <nav class="hero__tour-pagination" aria-label="Пагинация">
+            <ul class="hero__tour-pagination-list">
+              <li class="hero__tour-pagination-item hero__tour-pagination-item--active"></li>
+              <li class="hero__tour-pagination-item"></li>
+              <li class="hero__tour-pagination-item"></li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </div>
   </section>
@@ -172,6 +194,61 @@
               </div>
             </div>
           </div>
+          <div class="tours__tour-item tours__tour-item--fisht">
+            <div class="tours__tour-options">
+              <div class="tours__tour-place tours__tour-place--fisht">
+                <svg class="tours__tour-place-icon" width="9" height="12">
+                  <use href="/__spritemap#sprite-tour-place-icon"></use>
+                </svg>
+                <span class="tours__tour-place-name">Адыгея</span>
+              </div>
+              <div class="tours__tour-days">
+                <svg class="tours__tour-days-icon" width="20" height="20">
+                  <use href="/__spritemap#sprite-tour-days-icon"></use>
+                </svg>
+                <span class="tours__tour-days-count">7 дней</span>
+              </div>
+              <div class="tours__tour-nights">
+                <svg class="tours__tour-nights-icon" width="16" height="16">
+                  <use href="/__spritemap#sprite-tour-nights-icon"></use>
+                </svg>
+                <span class="tours__tour-nights-count">6 ночей</span>
+              </div>
+            </div>
+            <h3 class="tours__tour-item-header tours__tour-item-header--fisht">
+              Через Фишт <br>к Чёрному морю и обратно
+            </h3>
+            <div class="tours__tour-info">
+              <div class="tours__tour-info-item tours__tour-info-item--fisht">
+                <span class="tours__tour-info-header">Сложность:</span>
+                <div class="tours__tour-difficulty-stars">
+                  <svg class="tours__tour-difficulty-star" width="17" height="16">
+                    <use href="/__spritemap#sprite-tour-difficulty-star-fill"></use>
+                  </svg>
+                  <svg class="tours__tour-difficulty-star" width="17" height="16">
+                    <use href="/__spritemap#sprite-tour-difficulty-star-fill"></use>
+                  </svg>
+                  <svg class="tours__tour-difficulty-star" width="17" height="16">
+                    <use href="/__spritemap#sprite-tour-difficulty-star-fill"></use>
+                  </svg>
+                  <svg class="tours__tour-difficulty-star" width="17" height="16">
+                    <use href="/__spritemap#sprite-tour-difficulty-star-fill"></use>
+                  </svg>
+                  <svg class="tours__tour-difficulty-star" width="17" height="16">
+                    <use href="/__spritemap#sprite-tour-difficulty-star-empty"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="tours__tour-info-item">
+                <span class="tours__tour-info-header">Даты набора:</span>
+                <span class="tours__tour-info-text">15.07–19.07</span>
+              </div>
+              <div class="tours__tour-info-item">
+                <span class="tours__tour-info-header">Группа:</span>
+                <span class="tours__tour-info-text">до 22 чел.</span>
+              </div>
+            </div>
+          </div>
         </div>
         <a class="tours__watch-all" href="#">
           Показать все туры
@@ -186,7 +263,8 @@
     <div class="container container--overflow">
       <div class="training__background-wrapper">
         <h2 class="training__header section-header">Обучение</h2>
-        <p class="training__info">Обучение проводится квалифицированными специалистами,<br class="training__info-tablet-br"> за плечами которых десятки
+        <p class="training__info">Обучение проводится квалифицированными специалистами,<br
+          class="training__info-tablet-br"> за плечами которых десятки
           пройденных маршрутов Кавказа, Крыма, Гималаев, Эльбруса, Алтая, Карелии, Адыгеи и других.</p>
         <div class="training__flex-wrapper">
           <h3 class="training__instructors-header">Наши инструкторы</h3>
@@ -206,6 +284,8 @@
         <div class="training__instructors">
           <div class="training__instructor-card training__instructor-card--hidden">
             <picture>
+              <source type="image/webp" media="(min-width: 1440px)"
+                      srcset="img/desktop/instructors/alexandr-prokofiev-1x.webp, img/desktop/instructors/alexandr-prokofiev-2x.webp 2x">
               <source type="image/webp" media="(min-width: 768px)"
                       srcset="img/tablet/instructors/alexandr-prokofiev-1x.webp, img/tablet/instructors/alexandr-prokofiev-2x.webp 2x">
               <img class="training__instructors-photo" src="img/mobile/instructors/nadejda-kolesnichenko-1x.webp"
@@ -221,12 +301,15 @@
                 </svg>
               </a>
             </div>
-            <p class="training__instructor-description">Строгий и внимательный инструктор, весёлый<br> и общительный
+            <p class="training__instructor-description">Строгий и внимательный инструктор, весёлый<br
+              class="training__instructor-description-prokofiev-br"> и общительный
               человек.
               Любит природу.</p>
           </div>
           <div class="training__instructor-card training__instructor-card--hidden">
             <picture>
+              <source type="image/webp" media="(min-width: 1440px)"
+                      srcset="img/desktop/instructors/svetlana-afinogenova-1x.webp, img/desktop/instructors/svetlana-afinogenova-2x.webp 2x">
               <source type="image/webp" media="(min-width: 768px)"
                       srcset="img/tablet/instructors/svetlana-afinogenova-1x.webp, img/tablet/instructors/svetlana-afinogenova-2x.webp 2x">
               <img class="training__instructors-photo" src="img/mobile/instructors/nadejda-kolesnichenko-1x.webp"
@@ -242,11 +325,15 @@
                 </svg>
               </a>
             </div>
-            <p class="training__instructor-description">Видеть мир вокруг, познавать его опасности, находить друг друга,
-              становиться ближе, чувствовать — в этом назначение жизни.</p>
+            <p class="training__instructor-description">Видеть мир вокруг, познавать
+              <br class="training__instructor-description-afinogenova-br">его опасности, находить друг друга,
+              становиться ближе, чувствовать —
+              <br class="training__instructor-description-afinogenova-br"> в этом назначение жизни.</p>
           </div>
           <div class="training__instructor-card training__instructor-card--kolesnichenko">
             <picture>
+              <source type="image/webp" media="(min-width: 1440px)"
+                      srcset="img/desktop/instructors/nadejda-kolesnichenko-1x.webp, img/desktop/instructors/nadejda-kolesnichenko-2x.webp 2x">
               <source type="image/webp" media="(min-width: 768px)"
                       srcset="img/tablet/instructors/nadejda-kolesnichenko-1x.webp, img/tablet/instructors/nadejda-kolesnichenko-2x.webp 2x">
               <img class="training__instructors-photo training__instructors-photo--kolesnichenko"
@@ -263,8 +350,36 @@
                 </svg>
               </a>
             </div>
-            <p class="training__instructor-description">Участники говорят,<br> что Надежда ответственная, приятная в
-              общении, <br>и в поездках <br>с ней чувствуешь себя спокойно и уверенно.</p>
+            <p class="training__instructor-description">Участники говорят,
+              <br class="training__instructor-description-kolesnichenko-br"> что Надежда ответственная, приятная в
+              общении,
+              <br>и в поездках
+              <br class="training__instructor-description-kolesnichenko-br">с ней чувствуешь себя спокойно и уверенно.
+            </p>
+          </div>
+          <div
+            class="training__instructor-card training__instructor-card--hidden training__instructor-card--hidden-desktop">
+            <picture>
+              <source type="image/webp" media="(min-width: 1440px)"
+                      srcset="img/desktop/instructors/fedor-kaigorodov-1x.webp, img/desktop/instructors/fedor-kaigorodov-2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)"
+                      srcset="img/tablet/instructors/svetlana-afinogenova-1x.webp, img/tablet/instructors/svetlana-afinogenova-2x.webp 2x">
+              <img class="training__instructors-photo" src="img/mobile/instructors/nadejda-kolesnichenko-1x.webp"
+                   alt="Фотография инструктора" width="260" height="200"
+                   srcset="img/mobile/instructors/nadejda-kolesnichenko-2x.webp 2x">
+            </picture>
+            <div class="training__instructor-card-flex-wrapper">
+              <h4 class="training__instructor-name">Федор<br> Кайгородов</h4>
+              <a class="training__instructor-vk" href="#">
+                <span class="visually-hidden">Федор Кайгородов ссылка ВКонтакте</span>
+                <svg class="training__instructor-vk-icon" width="17" height="8">
+                  <use href="/__spritemap#sprite-training-icon_vk"></use>
+                </svg>
+              </a>
+            </div>
+            <p class="training__instructor-description">Опыт походов: Ходит в походы
+              <br class="training__instructor-description-kaigorodov-br">с 2001 года. В России побывал в
+              горных районах Хибины, Архыз, много путешествует по Европе.</p>
           </div>
         </div>
         <h3 class="training__learning-process-header">Процесс обучения</h3>
@@ -283,14 +398,16 @@
                  height="27">
               <use href="/__spritemap#sprite-learning-boot-icon"></use>
             </svg>
-            <span class="training__learning-process-item-text">Подготовка и техническое снаряжение в походах</span>
+            <span class="training__learning-process-item-text">Подготовка
+              <br class="training__learning-process-item-text-br-desktop">и техническое снаряжение в походах</span>
           </li>
           <li class="training__learning-process-item training__learning-process-item--lectures">
             <svg class="training__learning-process-item-icon training__learning-process-item-icon--tree" width="24"
                  height="27">
               <use href="/__spritemap#sprite-learning-tree-icon"></use>
             </svg>
-            <span class="training__learning-process-item-text">Лекции по окружающей среде, экологии и гигиене</span>
+            <span class="training__learning-process-item-text">Лекции
+              <br class="training__learning-process-item-text-br-desktop">по окружающей среде, экологии и гигиене</span>
           </li>
           <li class="training__learning-process-item training__learning-process-item--difficulty">
             <svg class="training__learning-process-item-icon training__learning-process-item-icon--mountain" width="24"
@@ -300,6 +417,11 @@
             <span class="training__learning-process-item-text">Разъяснение сложности горных препятствий</span>
           </li>
         </ul>
+        <div class="training__decor-desktop-line"></div>
+        <div class="training__decor-desktop-circle"></div>
+        <div class="training__decor-desktop-circle training__decor-desktop-circle--equipment"></div>
+        <div class="training__decor-desktop-circle training__decor-desktop-circle--lectures"></div>
+        <div class="training__decor-desktop-circle training__decor-desktop-circle--difficulty"></div>
       </div>
     </div>
   </section>
@@ -538,7 +660,8 @@
       <div class="form__background-wrapper">
         <h2 class="visually-hidden">Форма для связи</h2>
         <h3 class="form__header">Остались вопросы?</h3>
-        <p class="form__description">Заполните форму и наш оператор свяжется<br class="form__description-br"> с вами для консультации.</p>
+        <p class="form__description">Заполните форму и наш оператор свяжется<br class="form__description-br"> с вами для
+          консультации.</p>
         <form class="form__form" action="https://echo.htmlacademy.ru" method="post">
           <label class="visually-hidden" for="phone">Введите телефон</label>
           <input class="form__input" type="tel" name="phone" id="phone" placeholder="Телефон" required>
@@ -549,7 +672,8 @@
       </div>
       <div class="form__contacts">
         <h2 class="section-header form__contacts-header">Контакты</h2>
-        <p class="form__contacts-description">Свяжитесь с нами любым удобным для вас способом или приходите<br class="form__contacts-description-br"> к нам в
+        <p class="form__contacts-description">Свяжитесь с нами любым удобным для вас способом или приходите<br
+          class="form__contacts-description-br"> к нам в
           гости.
           Мы будем рады поделиться увлекательными историями и подобрать для вас тур.</p>
         <div class="form__contacts-flex-wrapper">

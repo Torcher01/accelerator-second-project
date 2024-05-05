@@ -37,6 +37,14 @@
   background-repeat: no-repeat;
 }
 
+.tours__tour-item--beluha {
+  display: none;
+}
+
+.tours__tour-item--fisht {
+  display: none;
+}
+
 .tours__tour-options {
   display: flex;
   margin-left: 20px;
@@ -221,6 +229,7 @@
   }
 
   .tours__tour-item--beluha {
+    display: block;
     background-image: url("../../img/tablet/tours/tour-background-beluha-1x.webp");
 
     @media (resolution >= 2dppx) {
@@ -261,5 +270,95 @@
   .tours__watch-all-icon {
     margin-left: 5px;
     margin-top: -3px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .tours__background-wrapper {
+    background-image: url("../../img/desktop/tours-background-1x.webp");
+
+    @media (resolution >= 2dppx) {
+      background-image: url("../../img/desktop/tours-background-2x.webp");
+    }
+
+    background-size: 602px 1630px;
+    background-position-x: 838px;
+    background-position-y: -126px;
+  }
+
+  .tours__header {
+    margin: 121px 778px 47px 120px;
+  }
+
+  .tours__slider-button-left,
+  .tours__slider-button-right {
+    margin-top: 68px;
+  }
+
+  .tours__tours-list {
+    margin-left: 120px;
+    margin-bottom: 63px;
+  }
+
+  .tours__tour-item {
+    background-size: 380px 416px;
+    margin-right: 30px;
+  }
+
+  .tours__tour-item--elbrus {
+    background-image: url("../../img/desktop/tours/tour-background-elbrus-1x.webp");
+
+    @media (resolution >= 2dppx) {
+      background-image: url("../../img/desktop/tours/tour-background-elbrus-2x.webp");
+    }
+  }
+
+  .tours__tour-item--beluha {
+    background-image: url("../../img/desktop/tours/tour-background-beluha-1x.webp");
+
+    @media (resolution >= 2dppx) {
+      background-image: url("../../img/desktop/tours/tour-background-beluha-2x.webp");
+    }
+    margin-right: 29px;
+  }
+
+  .tours__tour-item--fisht {
+    display: block;
+    background-image: url("../../img/desktop/tours/tour-background-fisht-1x.webp");
+
+    @media (resolution >= 2dppx) {
+      background-image: url("../../img/desktop/tours/tour-background-fisht-2x.webp");
+    }
+    padding-top: 196px;
+  }
+
+  .tours__tour-item-header--fisht {
+    width: 240px;
+  }
+
+  .tours__tour-place {
+    margin-right: 95px;
+  }
+
+  .tours__tour-place--beluha,
+  .tours__tour-place--fisht {
+    margin-right: 75px;
+  }
+
+  .tours__tour-info-item {
+    margin-right: 53px;
+  }
+
+  .tours__tour-info-item--beluha,
+  .tours__tour-info-item--fisht {
+    margin-right: 51px;
+  }
+
+  .tours__tour-info-header {
+    margin-bottom: 3px;
+  }
+
+  .tours__watch-all {
+    margin-left: 612px;
   }
 }

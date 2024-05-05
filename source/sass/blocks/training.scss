@@ -74,6 +74,10 @@
   width: 240px;
 }
 
+.training__instructor-description-afinogenova-br {
+  display: none;
+}
+
 .training__learning-process-header {
   font-size: 16px;
   font-weight: 700;
@@ -110,6 +114,14 @@
 
 .training__learning-process-item-text {
   width: 200px;
+}
+
+.training__learning-process-item-text-br-desktop {
+  display: none;
+}
+
+.training__decor-desktop-line {
+  display: none;
 }
 
 @media (min-width: $tablet-width) {
@@ -188,6 +200,10 @@
 
   .training__instructor-card--hidden {
     display: block;
+  }
+
+  .training__instructor-card--hidden-desktop {
+    display: none;
   }
 
   .training__instructors-photo {
@@ -285,5 +301,165 @@
 
   .training__learning-process-item-icon--mountain {
     width: 25px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .training__background-wrapper {
+    background-image: url("../../img/desktop/tours-background-1x.webp");
+
+    @media (resolution >= 2dppx) {
+      background-image: url("../../img/desktop/tours-background-2x.webp");
+    }
+
+    background-size: 602px 1630px;
+    background-position-x: 838px;
+    background-position-y: -861px;
+  }
+  .training__header {
+    padding-top: 139px;
+    margin-left: 120px;
+    margin-bottom: 29px;
+
+    &:before {
+      top: 120px;
+    }
+  }
+
+  .training__info {
+    margin-left: 120px;
+    width: 870px;
+    margin-bottom: 60px;
+  }
+
+  .training__info-tablet-br {
+    display: none;
+  }
+
+  .training__instructors-header {
+    font-size: 35px;
+    margin-left: 120px;
+    margin-right: 745px;
+    margin-bottom: 13px;
+  }
+
+  .training__slider-button-left,
+  .training__slider-button-right {
+    margin-top: -2px;
+  }
+
+  .training__instructors {
+    margin-left: 120px;
+  }
+
+  .training__instructor-card--hidden-desktop {
+    display: block;
+  }
+
+  .training__instructor-name {
+    margin-right: 73px;
+  }
+
+  .training__instructors-photo {
+    width: 255px;
+  }
+
+  .training__instructor-description {
+    width: 250px;
+  }
+
+  .training__instructor-description-prokofiev-br {
+    display: none;
+  }
+
+  .training__instructor-description-afinogenova-br {
+    display: inline;
+  }
+
+  .training__instructor-description-kolesnichenko-br {
+    display: none;
+  }
+
+  .training__learning-process-header {
+    font-size: 21px;
+    background-position-x: 687px;
+    background-position-y: -34px;
+    margin-left: 120px;
+    padding-top: 57px;
+    padding-bottom: 95px;
+  }
+
+  .training__learning-process {
+    display: flex;
+    gap: 0;
+    margin-top: -70px;
+    margin-left: 130px;
+    margin-bottom: -17px;
+  }
+
+  .training__learning-process-item {
+    margin-right: 19px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .training__learning-process-item--equipment {
+    margin-right: 18px;
+  }
+
+  .training__learning-process-item-text {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .training__learning-process-item-text-br-desktop {
+    display: inline;
+  }
+
+  .training__learning-process-item-icon {
+    width: 25px;
+    height: 25px;
+  }
+
+  .training__learning-process-item-icon--boot {
+    margin-left: -1px;
+    margin-right: 11px;
+  }
+
+  .training__learning-process-item-icon--mountain {
+    margin-left: -1px;
+  }
+
+  .training__decor-desktop-line {
+    display: block;
+    width: 1180px;
+    height: 2px;
+    background-color: #0266c1;
+    margin-left: 140px;
+    margin-bottom: 20px;
+  }
+
+  .training__decor-desktop-circle {
+    position: absolute;
+    bottom: 14px;
+    left: 140px;
+    width: 14px;
+    height: 14px;
+    background-color: #0266c1;
+    border-radius: 50%;
+  }
+
+  .training__decor-desktop-circle--equipment {
+    left: 393px;
+  }
+
+  .training__decor-desktop-circle--lectures {
+    left: 627px;
+  }
+
+  .training__decor-desktop-circle--difficulty {
+    left: 900px;
   }
 }

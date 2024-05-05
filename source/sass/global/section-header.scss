@@ -28,3 +28,15 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .section-header {
+    font-size: 35px;
+
+    &:before {
+      font-size: 55px;
+      width: 550px;
+      top: -18px;
+    }
+  }
+}

@@ -64,6 +64,12 @@
   color: #2d383f;
 }
 
+.footer__phone {
+  display: none;
+  font-size: 18px;
+  font-weight: 600;
+}
+
 @media (min-width: $tablet-width) {
   .footer__flex-wrapper {
     display: flex;
@@ -113,5 +119,50 @@
 
   .footer__privacy-policy {
     margin-left: 285px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .footer__flex-wrapper {
+    margin-top: 126px;
+    margin-left: 149px;
+    margin-bottom: 14px;
+  }
+
+  .footer__logo {
+    margin-right: 143px;
+  }
+
+  .footer__navigation {
+    margin-top: 7px;
+    margin-right: 169px;
+  }
+
+  .footer__navigation-item {
+    font-size: 16px;
+    margin-right: 31px;
+  }
+
+  .footer__navigation-item--about {
+    margin-right: 30px;
+  }
+
+  .footer__phone {
+    display: inline-block;
+    margin-top: 13px;
+  }
+
+  .footer__social-links {
+    margin-left: 659px;
+    margin-bottom: 14px;
+  }
+
+  .footer__social-link {
+    margin-right: 9px;
+  }
+
+  .footer__privacy-policy {
+    margin-left: 621px;
+    padding-bottom: 32px;
   }
 }

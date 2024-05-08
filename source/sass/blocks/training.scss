@@ -4,11 +4,15 @@
   margin-left: 15px;
 }
 
-.training__info {
+.training p {
   font-size: 14px;
   line-height: 20px;
   margin: 0 0 27px 15px;
   width: 290px;
+}
+
+.training p br {
+  display: none;
 }
 
 .training__info-tablet-br {
@@ -46,7 +50,7 @@
   margin-bottom: 14px;
 }
 
-.training__instructor-name {
+.training__instructor-card-flex-wrapper h4 {
   font-size: 14px;
   font-weight: 700;
   line-height: 16px;
@@ -67,19 +71,24 @@
   fill: #2d383f;
 }
 
-.training__instructor-description {
+.training__instructor-card span {
+  display: inline-block;
   font-size: 12px;
   line-height: 16px;
   margin: 0;
   width: 240px;
 }
 
-.training__instructor-description-kolesnichenko-br {
+.training__instructor-card--afinogenova span br {
   display: none;
 }
 
-.training__instructor-description-afinogenova-br {
+.training__instructor-card--kolesnichenko span br {
   display: none;
+}
+
+.training__instructor-card--kolesnichenko span br:nth-child(2) {
+  display: inline;
 }
 
 .training__learning-process-header {
@@ -154,12 +163,16 @@
     }
   }
 
-  .training__info {
+  .training p {
     font-size: 16px;
     line-height: 24px;
     margin-left: 45px;
     margin-bottom: 28px;
     width: 680px;
+  }
+
+  .training p br {
+    display: inline;
   }
 
   .training__info-tablet-br {
@@ -202,6 +215,10 @@
     }
   }
 
+  .training__instructor-card--kolesnichenko span br {
+    display: inline;
+  }
+
   .training__instructor-card--hidden {
     display: block;
   }
@@ -219,11 +236,11 @@
     width: 182.67px;
   }
 
-  .training__instructor-description {
+  .training__instructor-card span {
     width: 180px;
   }
 
-  .training__instructor-name {
+  .training__instructor-card-flex-wrapper h4 {
     width: 158px;
     margin-right: 0;
   }
@@ -258,7 +275,7 @@
       "equipment lectures";
     gap: 79px 106px;
     margin-left: 45px;
-    margin-bottom: 64px;
+    margin-bottom: 63px;
   }
 
   .training__learning-process-item--movement {
@@ -331,10 +348,14 @@
     }
   }
 
-  .training__info {
+  .training p {
     margin-left: 120px;
     width: 870px;
     margin-bottom: 60px;
+  }
+
+  .training p br {
+    display: none;
   }
 
   .training__info-tablet-br {
@@ -357,11 +378,15 @@
     margin-left: 120px;
   }
 
+  .training__instructor-card--kolesnichenko span br {
+    display: none;
+  }
+
   .training__instructor-card--hidden-desktop {
     display: block;
   }
 
-  .training__instructor-name {
+  .training__instructor-card-flex-wrapper h4 {
     margin-right: 73px;
   }
 
@@ -369,20 +394,16 @@
     width: 255px;
   }
 
-  .training__instructor-description {
+  .training__instructor-card span {
     width: 250px;
   }
 
-  .training__instructor-description-prokofiev-br {
+  .training__instructor-card--prokofiev span br {
     display: none;
   }
 
-  .training__instructor-description-afinogenova-br {
+  .training__instructor-card--afinogenova span br {
     display: inline;
-  }
-
-  .training__instructor-description-kolesnichenko-br {
-    display: none;
   }
 
   .training__learning-process-header {

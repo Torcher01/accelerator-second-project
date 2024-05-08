@@ -3,7 +3,7 @@
   margin-bottom: 29px;
   margin-left: 15px;
 
-  &:before {
+  &::before {
     top: -13px;
   }
 }
@@ -62,7 +62,7 @@
   .reviews-header {
     margin: 100px 491px 33px 45px;
 
-    &:before {
+    &::before {
       top: -16px;
     }
   }
@@ -127,7 +127,7 @@
   .reviews-header {
     margin: 239px 970px 34px 120px;
 
-    &:before {
+    &::before {
       top: -41px;
     }
   }
@@ -141,7 +141,7 @@
     width: 630px;
     padding-right: 50px;
     margin-right: 105px;
-    background-color: #fff;
+    background-color: #ffffff;
 
     &:first-child {
       margin-left: 130px;
@@ -150,9 +150,11 @@
 
   .reviews__review-slider-wrapper {
     background-image: url("../../img/desktop/reviews-background-clouds-1x.webp");
+
     @media (resolution >= 2dppx) {
       background-image: url("../../img/desktop/reviews-background-clouds-2x.webp");
     }
+
     background-size: 2091px 447px;
     background-position-x: -312px;
     background-position-y: 98px;

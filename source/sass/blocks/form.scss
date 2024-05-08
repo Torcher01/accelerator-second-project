@@ -264,6 +264,7 @@
     @media (resolution >= 2dppx) {
       background-image: url("../../img/desktop/form_background-2x.webp");
     }
+
     background-size: 1440px 760px;
     padding-top: 295px;
     padding-bottom: 281px;
@@ -323,7 +324,7 @@
     margin-left: 105px;
     margin-bottom: 20px;
 
-    &:before {
+    &::before {
       top: -19px;
     }
   }

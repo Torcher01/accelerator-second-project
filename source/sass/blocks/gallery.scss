@@ -72,6 +72,7 @@
 .gallery__long-photo-shown-desktop {
   display: none;
 }
+
 @media (min-width: $tablet-width) {
   .gallery__header {
     margin-top: 98px;
@@ -162,7 +163,7 @@
     margin-left: 120px;
     margin-bottom: 20px;
 
-    &:before {
+    &::before {
       top: -19px;
     }
   }

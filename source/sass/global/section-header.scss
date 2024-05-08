@@ -33,7 +33,7 @@
   .section-header {
     font-size: 35px;
 
-    &:before {
+    &::before {
       font-size: 55px;
       width: 550px;
       top: -18px;

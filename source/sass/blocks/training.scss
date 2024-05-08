@@ -320,12 +320,13 @@
     background-position-x: 838px;
     background-position-y: -861px;
   }
+
   .training__header {
     padding-top: 139px;
     margin-left: 120px;
     margin-bottom: 29px;
 
-    &:before {
+    &::before {
       top: 120px;
     }
   }

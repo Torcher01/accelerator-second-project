@@ -24,9 +24,16 @@
   }
 }
 
-.advantages__item-icon {
+.advantages__item-icon-border {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #0266c1;
   margin-left: 123px;
-  margin-bottom: 16px;
+  margin-bottom: 20px;
+}
+
+.advantages__item-icon {
+  margin: 8px 0 0 8px;
 }
 
 .advantages__item-icon--expertise {
@@ -123,7 +130,6 @@
   .advantages__item-icon-border {
     width: 46px;
     height: 46px;
-    border: 1px solid #0266c1;
     margin-left: 137px;
     margin-bottom: 27px;
   }
@@ -163,19 +169,14 @@
     background-image: none;
     flex-wrap: nowrap;
     gap: 0;
-    margin-left: 36px;
+    margin-left: 30px;
     margin-bottom: 35px;
   }
 
   .advantages__item {
     margin-right: 30px;
-    padding: 39px 0;
+    padding: 39px 0 61px;
     min-width: 380px;
-  }
-
-  .advantages__item {
-    min-width: 381px;
-    margin-right: 29px;
   }
 
   .advantages__item-icon-border {
@@ -196,8 +197,8 @@
   }
 
   .advantages__item-text {
-    width: 325px;
-    margin-left: 27px;
+    width: 340px;
+    margin-left: 19px;
     margin-right: 20px;
     margin-bottom: -22px;
   }

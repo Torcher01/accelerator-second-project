@@ -12,7 +12,7 @@
   font-size: 12px;
   line-height: 18px;
   width: 260px;
-  margin: 0 0 30px 15px;
+  margin: 0 0 31px 15px;
 }
 
 .gallery__description-tablet-br {
@@ -22,14 +22,26 @@
 .gallery__photos {
   display: grid;
   grid-template-columns: 160px 160px;
-  grid-template-rows: 147px 112px;
+  grid-template-rows: 147px 110px;
   overflow: hidden;
   gap: 9px 3px;
-  margin-bottom: 2px;
+  margin-bottom: 3px;
 }
 
 .gallery__image {
   width: 100%;
+}
+
+.gallery__image--long {
+  height: 266px;
+}
+
+.gallery__image--small {
+  height: 147px;
+}
+
+.gallery__image--small-compass {
+  height: 225px;
 }
 
 .gallery__long-photo {
@@ -43,9 +55,23 @@
 
 .gallery__small-photo {
   width: 162px;
+  height: 150px;
   margin-top: -13px;
 }
 
+.gallery__small-photo--compass {
+  margin-left: -3px;
+  margin-top: -15px;
+  margin-bottom: 1px;
+}
+
+.gallery__long-photo-shown-tablet {
+  display: none;
+}
+
+.gallery__long-photo-shown-desktop {
+  display: none;
+}
 @media (min-width: $tablet-width) {
   .gallery__header {
     margin-top: 98px;
@@ -86,14 +112,29 @@
 
   .gallery__photos {
     grid-template-columns: 250px 250px 250px;
-    grid-template-rows: 209px 200px;
+    grid-template-rows: 209px 201px;
     gap: 8px;
-    margin-bottom: 4px;
+  }
+
+  .gallery__image--long {
+    height: 418px;
+  }
+
+  .gallery__image--small {
+    height: 232px;
+  }
+
+  .gallery__image--small-compass {
+    height: 268px;
+  }
+
+  .gallery__image--rocks-route {
+    width: 252px;
   }
 
   .gallery__small-photo {
     width: 252px;
-    margin: 0;
+    margin: -23px 0 0;
   }
 
   .gallery__long-photo {
@@ -103,6 +144,10 @@
   .gallery__long-photo--tablet {
     display: block;
     grid-column: 3/4;
+  }
+
+  .gallery__long-photo-shown-tablet {
+    display: block;
   }
 }
 
@@ -141,8 +186,16 @@
     margin-bottom: 2px;
   }
 
-  .gallery__image {
-    height: 100%;
+  .gallery__image--long {
+    height: 463px;
+  }
+
+  .gallery__image--small {
+    height: 278px;
+  }
+
+  .gallery__image--rocks-route {
+    width: 100%;
   }
 
   .gallery__long-photo {
@@ -158,17 +211,26 @@
     grid-column: 5/6;
   }
 
-  .gallery__small-photo--compass-desktop {
+  .gallery__small-photo--compass {
     grid-column: 2/3;
   }
 
   .gallery__small-photo--group-desktop {
     grid-column: 4/4;
     grid-row: 1/1;
+    margin-top: -22px;
   }
 
   .gallery__small-photo--tent-desktop {
     grid-column: 4/4;
     grid-row: 2/2;
+  }
+
+  .gallery__small-photo--bonfire-desktop {
+    margin-top: -22px;
+  }
+
+  .gallery__long-photo-shown-desktop {
+    display: block;
   }
 }

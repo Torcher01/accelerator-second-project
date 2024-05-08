@@ -2,6 +2,10 @@
   margin-top: 56px;
   margin-bottom: 29px;
   margin-left: 15px;
+
+  &:before {
+    top: -13px;
+  }
 }
 
 .reviews__review {
@@ -11,6 +15,10 @@
   padding: 20px;
   box-shadow: 0 0 20px 0 rgba(28, 51, 116, 0.1);
   width: 250px;
+}
+
+.reviews__review--hidden {
+  display: none;
 }
 
 .reviews__review-image {
@@ -40,6 +48,11 @@
   font-weight: 300;
 }
 
+.reviews__review-flex-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
 @media (min-width: $tablet-width) {
   .reviews__flex-wrapper {
     display: flex;
@@ -48,6 +61,10 @@
 
   .reviews-header {
     margin: 100px 491px 33px 45px;
+
+    &:before {
+      top: -16px;
+    }
   }
 
   .reviews__slider-button-left,
@@ -76,9 +93,8 @@
     }
   }
 
-  .reviews__review-flex-wrapper {
+  .reviews__review--hidden {
     display: flex;
-    flex-direction: column;
   }
 
   .reviews__review-image {

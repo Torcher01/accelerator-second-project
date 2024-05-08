@@ -6,3 +6,44 @@ body {
 img {
   object-fit: none;
 }
+
+
+.tablet-br {
+  display: none;
+}
+
+.tablet-desktop-br {
+  display: none;
+}
+
+.desktop-br {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .mobile-br {
+    display: none;
+  }
+
+  .tablet-br {
+    display: inline;
+  }
+
+  .tablet-desktop-br {
+    display: inline;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .mobile-tablet-br {
+    display: none;
+  }
+
+  .tablet-br {
+    display: none;
+  }
+
+  .desktop-br {
+    display: inline;
+  }
+}

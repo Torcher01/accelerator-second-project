@@ -4,4 +4,5 @@
 // import 'swiper/css';
 
 import {setHeadersShadow} from './section-header-shadow.js';
+import './burger-menu.js';
 setHeadersShadow();

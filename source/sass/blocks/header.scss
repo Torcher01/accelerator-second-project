@@ -1,21 +1,57 @@
 .header {
+  position: absolute;
+  z-index: 1;
+  left: -15px;
+  width: 100%;
+  height: 85px;
   background-color: #0266c1;
   padding-top: 15px;
   padding-left: 30px;
-  padding-bottom: 11px;
 }
 
 .header__flex-wrapper {
   display: flex;
 }
 
-.header__burger-menu-icon {
-  margin-top: 4px;
+.header__burger-menu-switcher {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  width: 26px;
+  height: 26px;
   margin-right: 122px;
 }
 
+.header__burger-menu-icon {
+  margin-top: 4px;
+}
+
+.header__burger-menu-close {
+  margin-top: 2px;
+}
+
 .header__navigation {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  left: 0;
+  top: 99px;
+  background-color: #0266c1;
+}
+
+.header__burger-menu-hidden {
   display: none;
+}
+
+.header__navigation-item {
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin-bottom: 20px;
 }
 
 .header__logo {
@@ -31,30 +67,55 @@
 }
 
 @media (min-width: $tablet-width) {
+  .header {
+    padding-top: 10px;
+    padding-bottom: 36px;
+    height: 36px;
+  }
+
   .header__flex-wrapper-tablet {
     display: flex;
   }
 
-  .header__burger-menu-icon {
+  .header__burger-menu-switcher {
     margin-top: 17px;
     margin-left: 30px;
     margin-right: 242px;
   }
 
-  .header__logo {
+  .header__burger-menu-icon {
     margin-top: 5px;
+  }
+
+  .header__navigation {
+    left: 30px;
+    top: 102px;
+  }
+
+  .header__navigation-item {
+    font-size: 16px;
+    margin-bottom: 24px;
+  }
+
+  .header__logo {
+    margin-top: 10px;
     margin-bottom: 9px;
   }
 
   .header__phone {
     font-size: 16px;
     margin-left: 129px;
-    margin-top: 19px;
+    margin-top: 24px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .header__burger-menu-icon {
+  .header {
+    height: auto;
+    padding-bottom: 29px;
+  }
+
+  .header__burger-menu-switcher {
     display: none;
   }
 
@@ -64,23 +125,27 @@
 
   .header__flex-wrapper-tablet {
     align-items: center;
-    margin-bottom: 31px;
   }
 
   .header__logo {
-    margin: 27px 164px 0 137px;
+    margin: 19px 164px 0 137px;
   }
 
   .header__navigation {
+    position: static;
     display: flex;
-    margin-top: 30px;
+    flex-direction: row;
+    margin-top: 45px;
   }
 
   .header__navigation-item {
     font-size: 16px;
+    font-weight: 400;
     color: #ffffff;
     text-decoration: none;
     margin-right: 31px;
+    text-transform: none;
+    letter-spacing: 0;
 
     &:last-child {
       margin-right: 0;
@@ -97,7 +162,7 @@
 
   .header__phone {
     font-size: 18px;
-    margin-left: 133px;
-    margin-top: 32px;
+    margin-left: 134px;
+    margin-top: 23px;
   }
 }

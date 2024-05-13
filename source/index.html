@@ -14,13 +14,18 @@
     <h1 class="header__page-header visually-hidden">Компания "Lifetour". Организация походов в горы.</h1>
     <div class="header__flex-wrapper-tablet">
       <div class="header__flex-wrapper">
-        <svg class="header__burger-menu-icon" width="26" height="19">
-          <use href="/__spritemap#sprite-header-burger"></use>
-        </svg>
+        <button class="header__burger-menu-switcher" type="button">
+          <svg class="header__burger-menu-icon" width="26" height="19">
+            <use href="/__spritemap#sprite-header-burger"></use>
+          </svg>
+          <svg class="header__burger-menu-close header__burger-menu-hidden" width="27" height="23">
+            <use href="/__spritemap#sprite-burger-menu-close"></use>
+          </svg>
+        </button>
         <svg class="header__logo" width="142" height="42">
           <use href="/__spritemap#sprite-header-logo"></use>
         </svg>
-        <nav class="header__navigation" aria-label="Навигация по сайту в шапке">
+        <nav class="header__navigation header__burger-menu-hidden" aria-label="Навигация по сайту в шапке">
           <a class="header__navigation-item" href="#">Туры</a>
           <a class="header__navigation-item header__navigation-item--learning" href="#">Обучение</a>
           <a class="header__navigation-item" href="#">О нас</a>

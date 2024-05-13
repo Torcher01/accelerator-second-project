@@ -12,13 +12,13 @@ const openMenu = () => {
   menuCloseIcon.classList.remove('header__burger-menu-hidden');
   menu.classList.remove('header__burger-menu-hidden');
   if (mediaTablet.matches) {
-    pageHeader.style.height = `${pageHeader.scrollHeight -35}px`;
+    pageHeader.style.height = `${pageHeader.scrollHeight - 35}px`;
   } else {
     pageHeader.style.height = `${pageHeader.scrollHeight - 4}px`;
   }
   switchButton.removeEventListener('click', openMenu);
-  switchButton.addEventListener('click', closeMenu)
-}
+  switchButton.addEventListener('click', closeMenu);
+};
 
 const closeMenu = () => {
   pageHeader.style.height = '0';
@@ -32,10 +32,10 @@ const closeMenu = () => {
   }
   switchButton.removeEventListener('click', closeMenu);
   switchButton.addEventListener('click', openMenu);
-}
+};
 
-switchButton.addEventListener('click', openMenu)
+switchButton.addEventListener('click', openMenu);
 
 menuItem.forEach((item)=>{
   item.addEventListener('click', closeMenu);
-})
+});

@@ -44,6 +44,32 @@
   padding: 21px 34px 20px;
   margin-left: 70px;
   margin-bottom: 104px;
+
+  &:hover {
+    border: 1px solid #1c3374;
+    color: #1c3374;
+    background-color: #ffffff;
+    padding: 20px 33px 19px;
+  }
+
+  &:focus {
+    border: none;
+    padding: 21px 34px 20px;
+  }
+
+  &:active {
+    border: 1px solid #1c3374;
+    padding: 20px 33px 19px;
+    background-color: #1c3374;
+    color: #ffffff;
+  }
+
+  &:disabled {
+    cursor: default;
+    border: none;
+    background-color: #999999;
+    padding: 21px 34px 20px;
+  }
 }
 
 .hero__tour-info-item {

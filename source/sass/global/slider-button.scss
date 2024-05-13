@@ -14,6 +14,40 @@
     background-color: #0266c1;
     width: 37px;
     height: 35px;
+
+    &:hover {
+      border: 1px solid #1c3374;
+      background-color: #ffffff;
+    }
+
+    &:hover > .slider-button__arrow {
+      fill: #1c3374;
+      margin-left: 5px;
+    }
+
+    &:focus {
+      border: none;
+    }
+
+    &:focus > .slider-button__arrow {
+      margin-left: 5px;
+    }
+
+    &:active {
+      background-color: #1c3374;
+    }
+
+    &:active > .slider-button__arrow {
+      fill: #ffffff;
+    }
+
+    &:disabled {
+      background-color: #999999;
+    }
+
+    &:disabled > .slider-button__arrow {
+      fill: #ffffff;
+    }
   }
 
   .slider-button--disabled {

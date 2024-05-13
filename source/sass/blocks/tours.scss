@@ -168,12 +168,45 @@
   text-transform: uppercase;
   color: #2d383f;
   margin-left: 64px;
+
+  &:hover {
+    color: rgba(2, 102, 193, 0.1);
+  }
+
+  &:hover > .tours__watch-all-icon {
+    stroke: rgba(2, 102, 193, 0.1);
+  }
+
+  &:focus {
+    color: #0266c1;
+  }
+
+  &:focus > .tours__watch-all-icon {
+    stroke: #0266c1;
+  }
+
+  &:active {
+    color: #1c3374;
+  }
+
+  &:active > .tours__watch-all-icon {
+    stroke: #1c3374;
+  }
+
+  &:disabled {
+    color: #999999;
+  }
+
+  &:disabled > .tours__watch-all-icon {
+    stroke: #999999;
+  }
 }
 
 .tours__watch-all-icon {
   margin-left: 6px;
   margin-top: -2px;
   vertical-align: middle;
+  stroke: #2d383f;
 }
 
 @media (min-width: $tablet-width) {

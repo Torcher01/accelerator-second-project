@@ -61,6 +61,7 @@
 }
 
 .form__form-submit {
+  cursor: pointer;
   font-size: 16px;
   font-weight: 500;
   color: #ffffff;
@@ -69,6 +70,28 @@
   width: 258px;
   height: 58px;
   padding-top: 5px;
+
+  &:hover {
+    border: 1px solid #1c3374;
+    color: #1c3374;
+    background-color: #ffffff;
+  }
+
+  &:focus {
+    border: none;
+  }
+
+  &:active {
+    border: 1px solid #1c3374;
+    background-color: #1c3374;
+    color: #ffffff;
+  }
+
+  &:disabled {
+    cursor: default;
+    border: none;
+    background-color: #999999;
+  }
 }
 
 .form__contacts {
